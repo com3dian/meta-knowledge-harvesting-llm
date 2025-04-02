@@ -13,3 +13,4 @@
 | [Large language models for scientific discovery in molecular property prediction](https://doi.org/10.1038/s42256-025-00994-z) 🌍 | Nature Machine Intelligence |
 | [Structured information extraction from scientific text with large language models](https://doi.org/10.1038/s41467-024-45563-x) 🌍 | Nature Communications |
 | [Extracting accurate materials data from research papers with conversational language models and prompt engineering](https://doi.org/10.1038/s41467-024-45914-8) 🌍 | Nature Communications |
+| [Galactica: A Large Language Model for Science](https://arxiv.org/pdf/2211.09085) 🔍🏆 | preprint |
