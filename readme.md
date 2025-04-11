@@ -16,3 +16,7 @@
 | [Extracting accurate materials data from research papers with conversational language models and prompt engineering](https://doi.org/10.1038/s41467-024-45914-8) 🌍 | Nature Communications |
 | [Galactica: A Large Language Model for Science](https://arxiv.org/pdf/2211.09085) 🔍🏆 | preprint |
 | [LightRAG: Simple and Fast Retrieval-Augmented Generation](https://arxiv.org/abs/2410.05779) 🔍 | preprint |
+| [SciAssess: Benchmarking LLM Proficiency in Scientific Literature Analysis](http://arxiv.org/abs/2403.01976) 🏆 | preprint |
+| [SciKnowEval: Evaluating Multi-level Scientific Knowledge of Large Language Models](http://arxiv.org/abs/2406.09098) 🏆 | preprint |
+| [SciRepEval: A Multi-Format Benchmark for Scientific Document Representations](https://aclanthology.org/2023.emnlp-main.338/) 🏆 | EMNLP |
+
