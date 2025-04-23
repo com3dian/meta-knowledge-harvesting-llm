@@ -19,4 +19,4 @@
 | [SciAssess: Benchmarking LLM Proficiency in Scientific Literature Analysis](http://arxiv.org/abs/2403.01976) 🏆 | preprint |
 | [SciKnowEval: Evaluating Multi-level Scientific Knowledge of Large Language Models](http://arxiv.org/abs/2406.09098) 🏆 | preprint |
 | [SciRepEval: A Multi-Format Benchmark for Scientific Document Representations](https://aclanthology.org/2023.emnlp-main.338/) 🏆 | EMNLP |
-| KGGen: Extracting Knowledge Graphs from Plain Text with Language Models | preprint |
+| [KGGen: Extracting Knowledge Graphs from Plain Text with Language Models](https://arxiv.org/abs/2502.09956) | preprint |
