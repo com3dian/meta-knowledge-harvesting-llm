@@ -20,3 +20,4 @@
 | [SciKnowEval: Evaluating Multi-level Scientific Knowledge of Large Language Models](http://arxiv.org/abs/2406.09098) 🏆 | preprint |
 | [SciRepEval: A Multi-Format Benchmark for Scientific Document Representations](https://aclanthology.org/2023.emnlp-main.338/) 🏆 | EMNLP |
 | [KGGen: Extracting Knowledge Graphs from Plain Text with Language Models](https://arxiv.org/abs/2502.09956) | preprint |
+| [STiL: Semi-supervised Tabular-Image Learning for Comprehensive Task-Relevant Information Exploration in Multimodal Classification](https://arxiv.org/abs/2503.06277) | CVPR |
