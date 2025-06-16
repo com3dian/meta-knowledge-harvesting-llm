@@ -54,21 +54,24 @@ in a changing climate.
 """
 
 CHEATSHEETS["cheat_sheet_kg"] = """
-Crop Type - Crop Yield;
-Crop Type - Climate Drivers;
-Crop Yield - Climate Drivers;
-Crop Yield - Experimental Design;
-Crop Yield - Location;
-Crop Yield - Time;
+Technologies and Algorithms - machine learning;
+Modeling Terms - photobioreactor simulation;
+Cybersecurity Terms - data privacy;
+Networking and Infrastructure - low-latency systems;
 """
 
 CHEATSHEETS["special_interests"] = """
-- Numerical Variables: The crop type, including the full name and abbreviations of the crop type.
-- Scientific Concepts: The numerical value crop yield, including the values of the crop yield and their units, percentage value of crop yield, or the difference of crop yield between two conditions. E.g. 10% increase in crop yield, 10% decrease in rice yield, 10% increase in wheat yield compared to the control group, 10% decrease in maize yield compared to the control group.
-- : The climate drivers such as temperature, water availability and CO2 concentration, including the values of the climate drivers and their units, or percentage value of climate drivers.
-- Experimental Design: The full name and abbreviations of the experimental design, or the scenario of the experiment.
-- Location: The location of the experiment, including the full name and abbreviations of the location, or the latitude and longitude of the location.
-- Time: The time of the experiment, including day, month, year, the duration of the experiment, or the timing of exposure to stress—especially during critical developmental phases.
+Software or Computational Method: Algorithms, machine learning models, or data analysis techniques used in engineering and computer science to classify, cluster, or predict phenomena. For example, “random forest classification to reconstruct lifelong movements” and “cluster-based sampling approach for selecting the representative data”.
+Scientific Method: Experimental designs, modeling strategies, and evaluation methods applied in scientific research across domains such as agriculture, engineering, and environmental science. For example, “quantitative methods including ANOVA were used for statistical comparison of heights” and “the authors combined chronological clustering with random forest classification”.
+Infrastructure or Equipment: Physical systems, devices, or built environments relevant to engineering or environmental experiments, such as dams, factories, or fish ladders. For example, “spillways, turbines or fish ladder of Lajeado Dam” and “hydroelectric dams... Biobío catchment”.
+Institution or Organization: Universities, research institutes, or governmental bodies involved in research or policy development. For example, “University of Sheffield's Advanced Manufacturing Research Center” and “National Department of Agriculture”.
+Ecological or Biological Entity: Plant, animal, or microbial species studied in environmental and biological sciences. For example, “Percilia irwini, an endangered small darter” and “Cliona orientalis, the most abundant bioeroding sponge species”.
+Pollutant or Material: Chemical or physical contaminants such as microplastics, metals, or pollutants studied for environmental and health impacts. For example, “heavy metal pollutants in aquatic environments cause a severe threat” and “bioaccumulation in the food chain”.
+Time Expression: Dates, durations, and temporal intervals relevant to experimental design or historical context. For example, “from October, 1999 through September, 2004” and “2001 through 2003”.
+Health or Disease Concept: References to disease conditions, health risks, or toxic effects observed in human or ecological studies. For example, “heavy metals... cause a severe threat to public health” and “plasmonic biosensors could simplify procedures and radically reduce time”.
+Food or Nutrition Element: Foods, supplements, or nutritional components considered in medical, agricultural, or food security contexts. For example, “food supplements using different traditionally processed local foods” and “context of rural revitalization... Ashram schools... dietary provisions”.
+Demographic Group: Groups such as children, students, farmers, or indigenous populations involved in scientific or social studies. For example, “scheduled tribes (ST) children from age 6 to 17 years” and “schoolchildren of three major local STs”.
+Measurement or Quantity: Scientific quantities with units such as percent increase, mg, kg, t/ha—used across medicine, agriculture, and environmental research. For example, “93.0 mg calcium, 172.4 mg magnesium” and “21% total essential amino acid”.
 """
 
 CHEATSHEETS["entity_extraction"] = """---Goal---
