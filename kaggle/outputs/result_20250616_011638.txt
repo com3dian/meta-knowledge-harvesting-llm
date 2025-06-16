@@ -1,0 +1,2 @@
+Entities: defaultdict(<class 'list'>, {'Chatbots': [{'entity_name': 'Chatbots', 'entity_type': 'Software or Computational Method', 'description': 'Ensuring that chatbots can handle a wide range of queries and provide accurate, relevant information is crucial for their effectiveness [7].', 'source_id': 'chunk-b3eac2ada6d2ec7801da710f878b2d71', 'file_path': 'example.txt'}]})
+Relationships: defaultdict(<class 'list'>, {})
