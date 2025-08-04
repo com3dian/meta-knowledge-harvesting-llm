@@ -1,0 +1,1345 @@
+Maize:
+- entity_name: Maize
+  entity_type: Crop Type
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: Maize
+  entity_type: Crop Type
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Yield Loss Up To 7-33% Relative To Baseline:
+- entity_name: Yield Loss Up To 7-33% Relative To Baseline
+  entity_type: Crop Yield
+  description: The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in
+    UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative
+    to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Mean Baseline Yield Of 2 Mg Ha⁻¹:
+- entity_name: Mean Baseline Yield Of 2 Mg Ha⁻¹
+  entity_type: Crop Yield
+  description: The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in
+    UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative
+    to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+20% Increase In Rainfall Offsetting Yield Loss:
+- entity_name: 20% Increase In Rainfall Offsetting Yield Loss
+  entity_type: Crop Yield
+  description: However, a 20% increase in rainfall is projected to offset the yield
+    loss due to 1°C rise in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+30% Increase In Rainfall Offsetting Adverse Impact:
+- entity_name: 30% Increase In Rainfall Offsetting Adverse Impact
+  entity_type: Crop Yield
+  description: Similarly, a 30% increase in rainfall is predicted to offset the adverse
+    impact of 2°C rise in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Yield Reduction Of 8-35% (MIGP):
+- entity_name: Yield Reduction Of 8-35% (MIGP)
+  entity_type: Crop Yield
+  description: In MIGP region, yield reduction of about 8–35% with 1–5°C rise in atmospheric
+    temperature is projected.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Yield Reductions Of -10% To -35% (SP):
+- entity_name: Yield Reductions Of -10% To -35% (SP)
+  entity_type: Crop Yield
+  description: The SP region is also projected to experience adverse impact with -10,
+    -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise
+    in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Yield Gains Due To Increased CO₂ (0.1-7.2%):
+- entity_name: Yield Gains Due To Increased CO₂ (0.1-7.2%)
+  entity_type: Crop Yield
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+1.5 Times Higher Winter Maize Yields:
+- entity_name: 1.5 Times Higher Winter Maize Yields
+  entity_type: Crop Yield
+  description: Maize crop during winter is provided with assured irrigation and thus
+    yields about 1.5 times more than that of monsoon crop.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+13% Increase In UIGP Winter Yields:
+- entity_name: 13% Increase In UIGP Winter Yields
+  entity_type: Crop Yield
+  description: In UIGP, this beneficial effect with rise in temperature is projected
+    to be more up to 2°C rise (13% increase over current yields).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Rise In Atmospheric Temperatures:
+- entity_name: Rise In Atmospheric Temperatures
+  entity_type: Climate Drivers
+  description: Results of simulation analysis indicate that maize yields in monsoon
+    season are adversely affected due to rise in atmospheric temperatures in all three
+    regions (Fig. 2a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+1-5°C Rise In Atmospheric Temperatures:
+- entity_name: 1-5°C Rise In Atmospheric Temperatures
+  entity_type: Climate Drivers
+  description: The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in
+    UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative
+    to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+20% Increase In Rainfall:
+- entity_name: 20% Increase In Rainfall
+  entity_type: Climate Drivers
+  description: However, a 20% increase in rainfall is projected to offset the yield
+    loss due to 1°C rise in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+30% Increase In Rainfall:
+- entity_name: 30% Increase In Rainfall
+  entity_type: Climate Drivers
+  description: Similarly, a 30% increase in rainfall is predicted to offset the adverse
+    impact of 2°C rise in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Increase In Rainfall:
+- entity_name: Increase In Rainfall
+  entity_type: Climate Drivers
+  description: In this region, increase in rainfall is likely to offset the temperature
+    rise up to 0.75°C and any increase beyond this temperature will adversely impact
+    the yields, in spite of increase in rainfall.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+10% Increase In Rainfall:
+- entity_name: 10% Increase In Rainfall
+  entity_type: Climate Drivers
+  description: A 10% increase in rainfall will offset the reduction in yield due to
+    1°C rise in temperature in this region.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Increase In Carbon Dioxide Concentration:
+- entity_name: Increase In Carbon Dioxide Concentration
+  entity_type: Climate Drivers
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+450 ppmV CO₂ Concentration:
+- entity_name: 450 ppmV CO₂ Concentration
+  entity_type: Climate Drivers
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+550 ppmV CO₂ Concentration:
+- entity_name: 550 ppmV CO₂ Concentration
+  entity_type: Climate Drivers
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Mild Water Stress Conditions:
+- entity_name: Mild Water Stress Conditions
+  entity_type: Climate Drivers
+  description: The benefits are projected to be high in mild water stress conditions,
+    but they are likely to reduce in severe water stress situations (Table 3).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Severe Water Stress Situations:
+- entity_name: Severe Water Stress Situations
+  entity_type: Climate Drivers
+  description: The benefits are projected to be high in mild water stress conditions,
+    but they are likely to reduce in severe water stress situations (Table 3).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Assured Irrigation:
+- entity_name: Assured Irrigation
+  entity_type: Climate Drivers
+  description: Maize crop during winter is provided with assured irrigation and thus
+    yields about 1.5 times more than that of monsoon crop.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Temperatures Up To 2.7°C:
+- entity_name: Temperatures Up To 2.7°C
+  entity_type: Climate Drivers
+  description: Winter maize grain yield reduced with increase in temperatures in SP
+    and MIGP, but in UIGP rise in temperatures up to 2.7°C is likely to improve the
+    maize yields.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+2°C Rise In Temperature:
+- entity_name: 2°C Rise In Temperature
+  entity_type: Climate Drivers
+  description: In UIGP, this beneficial effect with rise in temperature is projected
+    to be more up to 2°C rise (13% increase over current yields).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Minimum And Maximum Temperatures And Rainfall:
+- entity_name: Minimum And Maximum Temperatures And Rainfall
+  entity_type: Climate Drivers
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+CO₂ Concentrations:
+- entity_name: CO₂ Concentrations
+  entity_type: Climate Drivers
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Simulation Analysis:
+- entity_name: Simulation Analysis
+  entity_type: Experimental Design
+  description: Results of simulation analysis indicate that maize yields in monsoon
+    season are adversely affected due to rise in atmospheric temperatures in all three
+    regions (Fig. 2a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Monsoon Crop Simulation:
+- entity_name: Monsoon Crop Simulation
+  entity_type: Experimental Design
+  description: Results of simulation analysis indicate that maize yields in monsoon
+    season are adversely affected due to rise in atmospheric temperatures in all three
+    regions (Fig. 2a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Winter Crop Simulation:
+- entity_name: Winter Crop Simulation
+  entity_type: Experimental Design
+  description: Maize crop during winter is provided with assured irrigation and thus
+    yields about 1.5 times more than that of monsoon crop.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+HadCM3 Model:
+- entity_name: HadCM3 Model
+  entity_type: Experimental Design
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Bern CC Model:
+- entity_name: Bern CC Model
+  entity_type: Experimental Design
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+InfoCrop-MAIZE Model:
+- entity_name: InfoCrop-MAIZE Model
+  entity_type: Experimental Design
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: InfoCrop-MAIZE Model
+  entity_type: Experimental Design
+  description: This approach was followed because of reported spatio-temporal variations
+    in climate change scenarios (IPCC 2007).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Climate Change Scenarios:
+- entity_name: Climate Change Scenarios
+  entity_type: Experimental Design
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: Climate Change Scenarios
+  entity_type: Experimental Design
+  description: This approach was followed because of reported spatio-temporal variations
+    in climate change scenarios (IPCC 2007).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+UIGP Region:
+- entity_name: UIGP Region
+  entity_type: Location
+  description: The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in
+    UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative
+    to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: UIGP Region
+  entity_type: Location
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+MIGP Region:
+- entity_name: MIGP Region
+  entity_type: Location
+  description: In MIGP region, yield reduction of about 8–35% with 1–5°C rise in atmospheric
+    temperature is projected.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+SP Region:
+- entity_name: SP Region
+  entity_type: Location
+  description: The SP region is also projected to experience adverse impact with -10,
+    -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise
+    in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: SP Region
+  entity_type: Location
+  description: In SP, monsoon season crop is projected to lose grain yield by 21%
+    from current yields due to climate change by 2020 and 35% by 2050 and later.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Monsoon Season:
+- entity_name: Monsoon Season
+  entity_type: Time
+  description: Results of simulation analysis indicate that maize yields in monsoon
+    season are adversely affected due to rise in atmospheric temperatures in all three
+    regions (Fig. 2a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Winter Season:
+- entity_name: Winter Season
+  entity_type: Time
+  description: Maize crop during winter is provided with assured irrigation and thus
+    yields about 1.5 times more than that of monsoon crop.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Year 2020:
+- entity_name: Year 2020
+  entity_type: Time
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Year 2050:
+- entity_name: Year 2050
+  entity_type: Time
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Year 2080:
+- entity_name: Year 2080
+  entity_type: Time
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Current Yields:
+- entity_name: Current Yields
+  entity_type: Time
+  description: In UIGP, this beneficial effect with rise in temperature is projected
+    to be more up to 2°C rise (13% increase over current yields).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Grain Development Phase:
+- entity_name: Grain Development Phase
+  entity_type: Time
+  description: With temperature rise, the crop experiences conditions closer to optimal
+    temperature during grain development, benefiting grain number.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Grain Filling Period:
+- entity_name: Grain Filling Period
+  entity_type: Time
+  description: Relatively low temperature during grain filling period required more
+    days to satisfy thermal time requirement.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Atmospheric Temperature:
+- entity_name: Atmospheric Temperature
+  entity_type: Atmospheric Temperature
+  description: Climate Drivers
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Maize Yield (Monsoon Season):
+- entity_name: Maize Yield (Monsoon Season)
+  entity_type: Maize Yield (Monsoon Season)
+  description: Crop Yield
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+UIGP (Upper Indo-Gangetic Plains):
+- entity_name: UIGP (Upper Indo-Gangetic Plains)
+  entity_type: UIGP (Upper Indo-Gangetic Plains)
+  description: Location
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Rainfall:
+- entity_name: Rainfall
+  entity_type: Rainfall
+  description: Climate Drivers
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+MIGP (Middle Indo-Gangetic Plains):
+- entity_name: MIGP (Middle Indo-Gangetic Plains)
+  entity_type: MIGP (Middle Indo-Gangetic Plains)
+  description: Location
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+SP Region (Southern Plateau):
+- entity_name: SP Region (Southern Plateau)
+  entity_type: SP Region (Southern Plateau)
+  description: Location
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+CO₂ Concentration:
+- entity_name: CO₂ Concentration
+  entity_type: CO₂ Concentration
+  description: Climate Drivers
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Maize Yield (CO₂ Impact):
+- entity_name: Maize Yield (CO₂ Impact)
+  entity_type: Maize Yield (CO₂ Impact)
+  description: Crop Yield
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Water Stress Conditions:
+- entity_name: Water Stress Conditions
+  entity_type: Water Stress Conditions
+  description: Experimental Design
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Maize Yield (Winter Season):
+- entity_name: Maize Yield (Winter Season)
+  entity_type: Maize Yield (Winter Season)
+  description: Crop Yield
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Grain Number:
+- entity_name: Grain Number
+  entity_type: Grain Number
+  description: Crop Yield
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Grain Filling Duration (GFD):
+- entity_name: Grain Filling Duration (GFD)
+  entity_type: Grain Filling Duration (GFD)
+  description: Experimental Design
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+C4 Plant:
+- entity_name: C4 Plant
+  entity_type: Crop Type
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Monsoon Maize Yields:
+- entity_name: Monsoon Maize Yields
+  entity_type: Crop Yield
+  description: Results of simulation analysis indicate that maize yields in monsoon
+    season are adversely affected due to rise in atmospheric temperatures in all three
+    regions (Fig. 2a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Grain Yield Decrease:
+- entity_name: Grain Yield Decrease
+  entity_type: Crop Yield
+  description: Grain yield decreased with each degree rise in atmospheric temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Mean Baseline Yield Of Rainfed Maize Crop (2 Mg Ha⁻¹)"|:
+- entity_name: Mean Baseline Yield Of Rainfed Maize Crop (2 Mg Ha⁻¹)"|
+  entity_type: Crop Yield
+  description: The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in
+    UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative
+    to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Projected Yield Loss (UIGP, 7-33%):
+- entity_name: Projected Yield Loss (UIGP, 7-33%)
+  entity_type: Crop Yield
+  description: The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in
+    UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative
+    to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Yield Loss Offset By 20% Rainfall Increase:
+- entity_name: Yield Loss Offset By 20% Rainfall Increase
+  entity_type: Crop Yield
+  description: However, a 20% increase in rainfall is projected to offset the yield
+    loss due to 1°C rise in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Adverse Impact Offset By 30% Rainfall Increase:
+- entity_name: Adverse Impact Offset By 30% Rainfall Increase
+  entity_type: Crop Yield
+  description: Similarly, a 30% increase in rainfall is predicted to offset the adverse
+    impact of 2°C rise in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+MIGP Yield Reduction (8-35%):
+- entity_name: MIGP Yield Reduction (8-35%)
+  entity_type: Crop Yield
+  description: In MIGP region, yield reduction of about 8–35% with 1–5°C rise in atmospheric
+    temperature is projected.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+SP Yield Reductions (-10% To -35%):
+- entity_name: SP Yield Reductions (-10% To -35%)
+  entity_type: Crop Yield
+  description: The SP region is also projected to experience adverse impact with -10,
+    -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise
+    in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Yield Benefits From Increased CO₂ (0.1-7.2%):
+- entity_name: Yield Benefits From Increased CO₂ (0.1-7.2%)
+  entity_type: Crop Yield
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Winter Maize Grain Yield:
+- entity_name: Winter Maize Grain Yield
+  entity_type: Crop Yield
+  description: Winter maize grain yield reduced with increase in temperatures in SP
+    and MIGP, but in UIGP rise in temperatures up to 2.7°C is likely to improve the
+    maize yields.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Winter Maize Yield (1.5x Monsoon Crop)"|:
+- entity_name: Winter Maize Yield (1.5x Monsoon Crop)"|
+  entity_type: Crop Yield
+  description: Maize crop during winter is provided with assured irrigation and thus
+    yields about 1.5 times more than that of monsoon crop.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Improved Maize Yields (UIGP, Up To 2.7°C)"|:
+- entity_name: Improved Maize Yields (UIGP, Up To 2.7°C)"|
+  entity_type: Crop Yield
+  description: Winter maize grain yield reduced with increase in temperatures in SP
+    and MIGP, but in UIGP rise in temperatures up to 2.7°C is likely to improve the
+    maize yields.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+13% Increase Over Current Yields (UIGP)"|:
+- entity_name: 13% Increase Over Current Yields (UIGP)"|
+  entity_type: Crop Yield
+  description: In UIGP, this beneficial effect with rise in temperature is projected
+    to be more up to 2°C rise (13% increase over current yields).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Reduction In Yields (UIGP, Beyond 2.7°C)"|:
+- entity_name: Reduction In Yields (UIGP, Beyond 2.7°C)"|
+  entity_type: Crop Yield
+  description: In UIGP, rise in temperatures beyond 2.7°C caused reduction in yield
+    mainly due to reduced number of grains.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Insignificant Affect On Monsoon Maize Productivity:
+- entity_name: Insignificant Affect On Monsoon Maize Productivity
+  entity_type: Crop Yield
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Temperature Rise Up To 0.75°C:
+- entity_name: Temperature Rise Up To 0.75°C
+  entity_type: Climate Drivers
+  description: In this region, increase in rainfall is likely to offset the temperature
+    rise up to 0.75°C and any increase beyond this temperature will adversely impact
+    the yields, in spite of increase in rainfall.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+450 ppmV CO₂:
+- entity_name: 450 ppmV CO₂
+  entity_type: Climate Drivers
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+550 ppmV CO₂:
+- entity_name: 550 ppmV CO₂
+  entity_type: Climate Drivers
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Temperatures Increasing:
+- entity_name: Temperatures Increasing
+  entity_type: Climate Drivers
+  description: Winter maize grain yield reduced with increase in temperatures in SP
+    and MIGP, but in UIGP rise in temperatures up to 2.7°C is likely to improve the
+    maize yields.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Temperatures Up To 2.7°C (UIGP)"|:
+- entity_name: Temperatures Up To 2.7°C (UIGP)"|
+  entity_type: Climate Drivers
+  description: Winter maize grain yield reduced with increase in temperatures in SP
+    and MIGP, but in UIGP rise in temperatures up to 2.7°C is likely to improve the
+    maize yields.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Further Increase In Temperature:
+- entity_name: Further Increase In Temperature
+  entity_type: Climate Drivers
+  description: However, further increase in temperature is projected to reduce grain
+    yields and the reductions are likely to be more than those at MIGP and SP (Fig.
+    3a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Low Temperature During Grain Filling Period:
+- entity_name: Low Temperature During Grain Filling Period
+  entity_type: Climate Drivers
+  description: Relatively low temperature during grain filling period required more
+    days to satisfy thermal time requirement.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Average Maximum Temperatures (Winter Crop Season)"|:
+- entity_name: Average Maximum Temperatures (Winter Crop Season)"|
+  entity_type: Climate Drivers
+  description: However, in both MIGP and SP, where the average maximum temperatures
+    during winter crop season are relatively higher (Table 2), any increase in temperature
+    can cause reduction in yield.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Minimum And Maximum Temperatures (HadCM3 Output)"|:
+- entity_name: Minimum And Maximum Temperatures (HadCM3 Output)"|
+  entity_type: Climate Drivers
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Rainfall (HadCM3 Output)"|:
+- entity_name: Rainfall (HadCM3 Output)"|
+  entity_type: Climate Drivers
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+CO₂ Concentrations (Bern CC Output)"|:
+- entity_name: CO₂ Concentrations (Bern CC Output)"|
+  entity_type: Climate Drivers
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Optimal Temperature During Grain Development:
+- entity_name: Optimal Temperature During Grain Development
+  entity_type: Climate Drivers
+  description: With temperature rise, the crop experiences conditions closer to optimal
+    temperature during grain development, benefiting grain number.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Monsoon Crop Study:
+- entity_name: Monsoon Crop Study
+  entity_type: Experimental Design
+  description: Results of simulation analysis indicate that maize yields in monsoon
+    season are adversely affected due to rise in atmospheric temperatures in all three
+    regions (Fig. 2a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Winter Crop Study:
+- entity_name: Winter Crop Study
+  entity_type: Experimental Design
+  description: Maize crop during winter is provided with assured irrigation and thus
+    yields about 1.5 times more than that of monsoon crop.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Model Coupling Approach:
+- entity_name: Model Coupling Approach
+  entity_type: Experimental Design
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+IPCC 2007:
+- entity_name: IPCC 2007
+  entity_type: Experimental Design
+  description: This approach was followed because of reported spatio-temporal variations
+    in climate change scenarios (IPCC 2007).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: IPCC 2007
+  entity_type: Time
+  description: This approach was followed because of reported spatio-temporal variations
+    in climate change scenarios (IPCC 2007).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+UIGP:
+- entity_name: UIGP
+  entity_type: Location
+  description: The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in
+    UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative
+    to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+MIGP:
+- entity_name: MIGP
+  entity_type: Location
+  description: In MIGP region, yield reduction of about 8–35% with 1–5°C rise in atmospheric
+    temperature is projected.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: MIGP
+  entity_type: Location
+  description: On the other hand, in MIGP, maize is likely to suffer yield loss in
+    future scenarios.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+All Three Regions:
+- entity_name: All Three Regions
+  entity_type: Location
+  description: Results of simulation analysis indicate that maize yields in monsoon
+    season are adversely affected due to rise in atmospheric temperatures in all three
+    regions (Fig. 2a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+2020 Scenario:
+- entity_name: 2020 Scenario
+  entity_type: Time
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: 2020 Scenario
+  entity_type: Time
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+2050 Scenario:
+- entity_name: 2050 Scenario
+  entity_type: Time
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: 2050 Scenario
+  entity_type: Time
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+2080 Scenario:
+- entity_name: 2080 Scenario
+  entity_type: Time
+  description: The climate change scenario outputs of HadCM3 model on minimum and
+    maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for
+    2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: 2080 Scenario
+  entity_type: Time
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Grain Development:
+- entity_name: Grain Development
+  entity_type: Time
+  description: With temperature rise, the crop experiences conditions closer to optimal
+    temperature during grain development, benefiting grain number.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Flowering Period:
+- entity_name: Flowering Period
+  entity_type: Time
+  description: In all locations, flowering hastened due to increase in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Winter Maize Grain Yield Reduction:
+- entity_name: Winter Maize Grain Yield Reduction
+  entity_type: Crop Yield
+  description: Winter maize grain yield reduced with increase in temperatures in SP
+    and MIGP, but in UIGP rise in temperatures up to 2.7°C is likely to improve the
+    maize yields.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Further Grain Yield Reduction:
+- entity_name: Further Grain Yield Reduction
+  entity_type: Crop Yield
+  description: However, further increase in temperature is projected to reduce grain
+    yields and the reductions are likely to be more than those at MIGP and SP (Fig.
+    3a).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Yield Reduction Offset (Winter Crop)"|:
+- entity_name: Yield Reduction Offset (Winter Crop)"|
+  entity_type: Crop Yield
+  description: In the event of further increase in temperature to about 2.7°C, the
+    reduction in yields can be offset only if rainfall is increased or more irrigation
+    is provided.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Reduction In Yield Due To Reduced Grain Number (UIGP)"|:
+- entity_name: Reduction In Yield Due To Reduced Grain Number (UIGP)"|
+  entity_type: Crop Yield
+  description: In UIGP, rise in temperatures beyond 2.7°C caused reduction in yield
+    mainly due to reduced number of grains.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+1°C Rise In Temperature:
+- entity_name: 1°C Rise In Temperature
+  entity_type: Climate Drivers
+  description: However, a 20% increase in rainfall is projected to offset the yield
+    loss due to 1°C rise in temperature.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+450 PpmV CO₂:
+- entity_name: 450 PpmV CO₂
+  entity_type: Climate Drivers
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+550 PpmV CO₂:
+- entity_name: 550 PpmV CO₂
+  entity_type: Climate Drivers
+  description: Even though maize is a C4 plant, increase in carbon dioxide is projected
+    to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2%
+    at 550 ppmV.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+2°C Rise In Temperature (UIGP)"|:
+- entity_name: 2°C Rise In Temperature (UIGP)"|
+  entity_type: Climate Drivers
+  description: In UIGP, this beneficial effect with rise in temperature is projected
+    to be more up to 2°C rise (13% increase over current yields).
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Reduction In Rainfall:
+- entity_name: Reduction In Rainfall
+  entity_type: Climate Drivers
+  description: In this region, yield will improve with 2°C in spite of reduction in
+    rainfall.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Increased Rainfall:
+- entity_name: Increased Rainfall
+  entity_type: Climate Drivers
+  description: In the event of further increase in temperature to about 2.7°C, the
+    reduction in yields can be offset only if rainfall is increased or more irrigation
+    is provided.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+More Irrigation:
+- entity_name: More Irrigation
+  entity_type: Climate Drivers
+  description: In the event of further increase in temperature to about 2.7°C, the
+    reduction in yields can be offset only if rainfall is increased or more irrigation
+    is provided.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Current Lower Temperature During Winter (UIGP)"|:
+- entity_name: Current Lower Temperature During Winter (UIGP)"|
+  entity_type: Climate Drivers
+  description: In UIGP, GFD was found to increase with rise in temperature because
+    of current lower temperature during winter.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Projected Increase In Rainfall During Crop Season:
+- entity_name: Projected Increase In Rainfall During Crop Season
+  entity_type: Climate Drivers
+  description: This is mainly due to projected increase in rainfall during crop season,
+    which will provide scope for improved dry matter production and increase in grain
+    number.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Winter Crop Season:
+- entity_name: Winter Crop Season
+  entity_type: Time
+  description: However, in both MIGP and SP, where the average maximum temperatures
+    during winter crop season are relatively higher (Table 2), any increase in temperature
+    can cause reduction in yield.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+- entity_name: Winter Crop Season
+  entity_type: Time
+  description: The projected rise in temperature during winter crop season is more
+    in UIGP in 2020 and 2050 than in MIGP and SP, particularly during later part of
+    crop growth.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Increase In Rainfall (MIGP Context)"|:
+- entity_name: Increase In Rainfall (MIGP Context)"|
+  entity_type: Climate Drivers
+  description: In this region, increase in rainfall is likely to offset the temperature
+    rise up to 0.75°C and any increase beyond this temperature will adversely impact
+    the yields, in spite of increase in rainfall.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Increased Rainfall (Winter Crop Context)"|:
+- entity_name: Increased Rainfall (Winter Crop Context)"|
+  entity_type: Climate Drivers
+  description: In the event of further increase in temperature to about 2.7°C, the
+    reduction in yields can be offset only if rainfall is increased or more irrigation
+    is provided.
+  source_id: chunk-110b2a3996a446fc39fb457d4214d315
+  file_path: example.txt
+Monsoon Crop:
+- entity_name: Monsoon Crop
+  entity_type: Experimental Design
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Climate Change:
+- entity_name: Climate Change
+  entity_type: Climate Drivers
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Insignificant Effect On Productivity Of Monsoon Maize:
+- entity_name: Insignificant Effect On Productivity Of Monsoon Maize
+  entity_type: Crop Yield
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Monsoon Maize:
+- entity_name: Monsoon Maize
+  entity_type: Crop Type
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Increased Rainfall During Crop Season:
+- entity_name: Increased Rainfall During Crop Season
+  entity_type: Climate Drivers
+  description: This is mainly due to projected increase in rainfall during crop season,
+    which will provide scope for improved dry matter production and increase in grain
+    number.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Increased Temperature (Monsoon):
+- entity_name: Increased Temperature (Monsoon)
+  entity_type: Climate Drivers
+  description: This implies that the maize crop may benefit from additional availability
+    of water in spite of increase in temperature and related reduction in crop duration
+    by 3–4 days.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Reduced Crop Duration (3-4 Days):
+- entity_name: Reduced Crop Duration (3-4 Days)
+  entity_type: Time
+  description: This implies that the maize crop may benefit from additional availability
+    of water in spite of increase in temperature and related reduction in crop duration
+    by 3–4 days.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+5% Yield Loss (MIGP 2020):
+- entity_name: 5% Yield Loss (MIGP 2020)
+  entity_type: Crop Yield
+  description: The loss from current yields is projected to be ~5%, ~13%, ~17% in
+    2020, 2050 and 2080, respectively.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+13% Yield Loss (MIGP 2050):
+- entity_name: 13% Yield Loss (MIGP 2050)
+  entity_type: Crop Yield
+  description: The loss from current yields is projected to be ~5%, ~13%, ~17% in
+    2020, 2050 and 2080, respectively.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+17% Yield Loss (MIGP 2080):
+- entity_name: 17% Yield Loss (MIGP 2080)
+  entity_type: Crop Yield
+  description: The loss from current yields is projected to be ~5%, ~13%, ~17% in
+    2020, 2050 and 2080, respectively.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+SP:
+- entity_name: SP
+  entity_type: Location
+  description: In SP, monsoon season crop is projected to lose grain yield by 21%
+    from current yields due to climate change by 2020 and 35% by 2050 and later.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+21% Grain Yield Loss (SP 2020):
+- entity_name: 21% Grain Yield Loss (SP 2020)
+  entity_type: Crop Yield
+  description: In SP, monsoon season crop is projected to lose grain yield by 21%
+    from current yields due to climate change by 2020 and 35% by 2050 and later.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+35% Grain Yield Loss (SP 2050):
+- entity_name: 35% Grain Yield Loss (SP 2050)
+  entity_type: Crop Yield
+  description: In SP, monsoon season crop is projected to lose grain yield by 21%
+    from current yields due to climate change by 2020 and 35% by 2050 and later.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Rise In Daytime Temperature (Monsoon):
+- entity_name: Rise In Daytime Temperature (Monsoon)
+  entity_type: Climate Drivers
+  description: Projected rise in daytime temperature during monsoon is higher in SP
+    and MIGP as compared to UIGP region, even though minimum temperatures are projected
+    to rise almost similarly in these locations.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Rise In Minimum Temperatures:
+- entity_name: Rise In Minimum Temperatures
+  entity_type: Climate Drivers
+  description: Projected rise in daytime temperature during monsoon is higher in SP
+    and MIGP as compared to UIGP region, even though minimum temperatures are projected
+    to rise almost similarly in these locations.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Winter Crop:
+- entity_name: Winter Crop
+  entity_type: Experimental Design
+  description: As far as maize crop grown in winter is concerned, yield gains are
+    projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit
+    is likely to remain till 2050 (Fig. 4b).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Winter Maize:
+- entity_name: Winter Maize
+  entity_type: Crop Type
+  description: As far as maize crop grown in winter is concerned, yield gains are
+    projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit
+    is likely to remain till 2050 (Fig. 4b).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+5% Yield Gain (UIGP 2020):
+- entity_name: 5% Yield Gain (UIGP 2020)
+  entity_type: Crop Yield
+  description: As far as maize crop grown in winter is concerned, yield gains are
+    projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit
+    is likely to remain till 2050 (Fig. 4b).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+25% Yield Reduction (UIGP 2080):
+- entity_name: 25% Yield Reduction (UIGP 2080)
+  entity_type: Crop Yield
+  description: However, in 2080 scenario, yields are projected to be reduced by 25%
+    from current yields.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Post-2020 Scenario:
+- entity_name: Post-2020 Scenario
+  entity_type: Time
+  description: Winter maize in MIGP, currently a high yielding zone, is projected
+    to suffer in post-2020 scenario.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+50% Yield Reduction (MIGP 2050):
+- entity_name: 50% Yield Reduction (MIGP 2050)
+  entity_type: Crop Yield
+  description: The reduction in yield is likely to be to the tune of ~50% by 2050
+    and about 60% by 2080.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+60% Yield Reduction (MIGP 2080):
+- entity_name: 60% Yield Reduction (MIGP 2080)
+  entity_type: Crop Yield
+  description: The reduction in yield is likely to be to the tune of ~50% by 2050
+    and about 60% by 2080.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+13% Yield Decline (SP 2020):
+- entity_name: 13% Yield Decline (SP 2020)
+  entity_type: Crop Yield
+  description: In SP region, yields are projected to decline by about 13% in 2020,
+    17% in 2050 and 21% in 2080.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+17% Yield Decline (SP 2050):
+- entity_name: 17% Yield Decline (SP 2050)
+  entity_type: Crop Yield
+  description: In SP region, yields are projected to decline by about 13% in 2020,
+    17% in 2050 and 21% in 2080.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+21% Yield Decline (SP 2080):
+- entity_name: 21% Yield Decline (SP 2080)
+  entity_type: Crop Yield
+  description: In SP region, yields are projected to decline by about 13% in 2020,
+    17% in 2050 and 21% in 2080.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Rise In Temperature (Winter Crop Season):
+- entity_name: Rise In Temperature (Winter Crop Season)
+  entity_type: Climate Drivers
+  description: The projected rise in temperature during winter crop season is more
+    in UIGP in 2020 and 2050 than in MIGP and SP, particularly during later part of
+    crop growth.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+India:
+- entity_name: India
+  entity_type: Location
+  description: Thus, the spatio-temporal variation in existing climatic conditions
+    and projected changes in temperature and rainfall would bring about differential
+    impacts on monsoon maize crop in India.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Monsoon Maize Crop:
+- entity_name: Monsoon Maize Crop
+  entity_type: Crop Type
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Winter Maize Crop:
+- entity_name: Winter Maize Crop
+  entity_type: Crop Type
+  description: As far as maize crop grown in winter is concerned, yield gains are
+    projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit
+    is likely to remain till 2050.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Increased Rainfall (Monsoon):
+- entity_name: Increased Rainfall (Monsoon)
+  entity_type: Climate Drivers
+  description: This is mainly due to projected increase in rainfall during crop season,
+    which will provide scope for improved dry matter production and increase in grain
+    number.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Rise in Daytime Temperature (Monsoon):
+- entity_name: Rise in Daytime Temperature (Monsoon)
+  entity_type: Climate Drivers
+  description: Projected rise in daytime temperature during monsoon is higher in SP
+    and MIGP as compared to UIGP region, even though minimum temperatures are projected
+    to rise almost similarly in these locations.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Rise in Minimum Temperatures:
+- entity_name: Rise in Minimum Temperatures
+  entity_type: Climate Drivers
+  description: Projected rise in daytime temperature during monsoon is higher in SP
+    and MIGP as compared to UIGP region, even though minimum temperatures are projected
+    to rise almost similarly in these locations.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Variation in Winter Rainfall:
+- entity_name: Variation in Winter Rainfall
+  entity_type: Climate Drivers
+  description: In these areas, winter maize is well irrigated and thus variation in
+    winter rainfall, which otherwise is low, is less influential.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Projected Rise in Temperature (Winter):
+- entity_name: Projected Rise in Temperature (Winter)
+  entity_type: Climate Drivers
+  description: The projected rise in temperature during winter crop season is more
+    in UIGP in 2020 and 2050 than in MIGP and SP, particularly during later part of
+    crop growth.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Monsoon Maize Productivity in UIGP:
+- entity_name: Monsoon Maize Productivity in UIGP
+  entity_type: Crop Yield
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Monsoon Maize Yield Loss in MIGP:
+- entity_name: Monsoon Maize Yield Loss in MIGP
+  entity_type: Crop Yield
+  description: The loss from current yields is projected to be ~5%, ~13%, ~17% in
+    2020, 2050 and 2080, respectively.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Monsoon Maize Grain Yield Loss in SP:
+- entity_name: Monsoon Maize Grain Yield Loss in SP
+  entity_type: Crop Yield
+  description: In SP, monsoon season crop is projected to lose grain yield by 21%
+    from current yields due to climate change by 2020 and 35% by 2050 and later.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Winter Maize Yield Gain in UIGP:
+- entity_name: Winter Maize Yield Gain in UIGP
+  entity_type: Crop Yield
+  description: As far as maize crop grown in winter is concerned, yield gains are
+    projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit
+    is likely to remain till 2050.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Winter Maize Yield Reduction in UIGP (2080):
+- entity_name: Winter Maize Yield Reduction in UIGP (2080)
+  entity_type: Crop Yield
+  description: However, in 2080 scenario, yields are projected to be reduced by 25%
+    from current yields.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Winter Maize Yield Reduction in MIGP:
+- entity_name: Winter Maize Yield Reduction in MIGP
+  entity_type: Crop Yield
+  description: The reduction in yield is likely to be to the tune of ~50% by 2050
+    and about 60% by 2080.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Winter Maize Yield Decline in SP:
+- entity_name: Winter Maize Yield Decline in SP
+  entity_type: Crop Yield
+  description: In SP region, yields are projected to decline by about 13% in 2020,
+    17% in 2050 and 21% in 2080.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Well Irrigated Condition:
+- entity_name: Well Irrigated Condition
+  entity_type: Experimental Design
+  description: In these areas, winter maize is well irrigated and thus variation in
+    winter rainfall, which otherwise is low, is less influential.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Monsoon Crop Season:
+- entity_name: Monsoon Crop Season
+  entity_type: Time
+  description: This is mainly due to projected increase in rainfall during crop season,
+    which will provide scope for improved dry matter production and increase in grain
+    number.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Later Part of Crop Growth:
+- entity_name: Later Part of Crop Growth
+  entity_type: Time
+  description: The projected rise in temperature during winter crop season is more
+    in UIGP in 2020 and 2050 than in MIGP and SP, particularly during later part of
+    crop growth.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Insignificant Effect on Monsoon Maize Productivity:
+- entity_name: Insignificant Effect on Monsoon Maize Productivity
+  entity_type: Crop Yield
+  description: The analysis indicates that in UIGP region, climate change is projected
+    to insignificantly affect the productivity of monsoon maize crop in 2020, 2050
+    and 2080 scenarios (Fig. 4a).
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Improved Dry Matter Production:
+- entity_name: Improved Dry Matter Production
+  entity_type: Crop Yield
+  description: This is mainly due to projected increase in rainfall during crop season,
+    which will provide scope for improved dry matter production and increase in grain
+    number.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Increase in Grain Number:
+- entity_name: Increase in Grain Number
+  entity_type: Crop Yield
+  description: This is mainly due to projected increase in rainfall during crop season,
+    which will provide scope for improved dry matter production and increase in grain
+    number.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Maize Crop:
+- entity_name: Maize Crop
+  entity_type: Crop Type
+  description: This implies that the maize crop may benefit from additional availability
+    of water in spite of increase in temperature and related reduction in crop duration
+    by 3–4 days.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Additional Water Availability:
+- entity_name: Additional Water Availability
+  entity_type: Climate Drivers
+  description: This implies that the maize crop may benefit from additional availability
+    of water in spite of increase in temperature and related reduction in crop duration
+    by 3–4 days.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Increase in Temperature:
+- entity_name: Increase in Temperature
+  entity_type: Climate Drivers
+  description: This implies that the maize crop may benefit from additional availability
+    of water in spite of increase in temperature and related reduction in crop duration
+    by 3–4 days.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Reduction in Crop Duration (3-4 Days):
+- entity_name: Reduction in Crop Duration (3-4 Days)
+  entity_type: Time
+  description: This implies that the maize crop may benefit from additional availability
+    of water in spite of increase in temperature and related reduction in crop duration
+    by 3–4 days.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Yield Loss (MIGP Future Scenarios):
+- entity_name: Yield Loss (MIGP Future Scenarios)
+  entity_type: Crop Yield
+  description: On the other hand, in MIGP, maize is likely to suffer yield loss in
+    future scenarios.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Rise in Daytime Temperature During Monsoon:
+- entity_name: Rise in Daytime Temperature During Monsoon
+  entity_type: Climate Drivers
+  description: Projected rise in daytime temperature during monsoon is higher in SP
+    and MIGP as compared to UIGP region, even though minimum temperatures are projected
+    to rise almost similarly in these locations.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Rainfall Increase in UIGP:
+- entity_name: Rainfall Increase in UIGP
+  entity_type: Climate Drivers
+  description: Apart from this, rainfall is projected to increase in UIGP while it
+    is likely to change in MIGP.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Rainfall Change in MIGP:
+- entity_name: Rainfall Change in MIGP
+  entity_type: Climate Drivers
+  description: Apart from this, rainfall is projected to increase in UIGP while it
+    is likely to change in MIGP.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Existing Climatic Conditions:
+- entity_name: Existing Climatic Conditions
+  entity_type: Climate Drivers
+  description: Thus, the spatio-temporal variation in existing climatic conditions
+    and projected changes in temperature and rainfall would bring about differential
+    impacts on monsoon maize crop in India.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Winter Rainfall Variation:
+- entity_name: Winter Rainfall Variation
+  entity_type: Climate Drivers
+  description: In these areas, winter maize is well irrigated and thus variation in
+    winter rainfall, which otherwise is low, is less influential.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
+Rise in Temperature (Winter Crop Season):
+- entity_name: Rise in Temperature (Winter Crop Season)
+  entity_type: Climate Drivers
+  description: The projected rise in temperature during winter crop season is more
+    in UIGP in 2020 and 2050 than in MIGP and SP, particularly during later part of
+    crop growth.
+  source_id: chunk-b843b1d851c79158420cbc409bb3deac
+  file_path: example.txt
