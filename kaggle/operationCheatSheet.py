@@ -481,6 +481,7 @@ async def extract_entities(
     cheatsheet_knowledge_graph_inst: networkx.Graph = None,
     write_result_to_txt: bool = False,
     special_interest: str = None,
+    prefix: str = "",
 ) -> None:
     use_llm_func: callable = global_config["llm_model_func"]
     entity_extract_max_gleaning = global_config["entity_extract_max_gleaning"]
@@ -890,7 +891,7 @@ async def extract_entities(
 
     # Use graph database lock to ensure atomic merges and updates
     if write_result_to_txt:
-        save_knowledge_graph_to_pickle(all_nodes, all_edges, write_result_to_txt)
+        save_knowledge_graph_to_pickle(all_nodes, all_edges, prefix=prefix, write_result_to_txt=write_result_to_txt)
     else:
         async with graph_db_lock:
             # Process and update all entities at once
@@ -958,6 +959,510 @@ async def extract_entities(
         async with pipeline_status_lock:
             pipeline_status["latest_message"] = log_message
             pipeline_status["history_messages"].append(log_message)
+
+async def extract_evidence(
+    chunks: dict[str, TextChunkSchema],
+    knowledge_graph_inst: BaseGraphStorage,
+    entity_vdb: BaseVectorStorage,
+    relationships_vdb: BaseVectorStorage,
+    global_config: dict[str, str],
+    seed_entities: list[str],
+    pipeline_status: dict = None,
+    pipeline_status_lock=None,
+    llm_response_cache: BaseKVStorage | None = None,
+    cheatsheet_knowledge_graph_inst: networkx.Graph = None,
+    write_result_to_txt: bool = False,
+    special_interest: str = None,
+    prefix: str = ""
+    ):
+    """
+    Extract evidence from the knowledge graph
+    Args:
+        chunks: dict[str, TextChunkSchema]: The chunks to extract evidence from
+        knowledge_graph_inst: BaseGraphStorage: The knowledge graph instance
+        entity_vdb: BaseVectorStorage: The entity vector database
+        relationships_vdb: BaseVectorStorage: The relationships vector database
+        global_config: dict[str, str]: The global configuration
+    """
+    use_llm_func: callable = global_config["llm_model_func"]
+    entity_extract_max_gleaning = global_config["entity_extract_max_gleaning"]
+
+    ordered_chunks = list(chunks.items())
+    # add language and example number params to prompt
+    language = global_config["addon_params"].get(
+        "language", PROMPTS["DEFAULT_LANGUAGE"]
+    )
+    entity_types = global_config["addon_params"].get(
+        "entity_types", PROMPTS["DEFAULT_ENTITY_TYPES"]
+    )
+    example_number = global_config["addon_params"].get("example_number", None)
+    if example_number and example_number < len(PROMPTS["entity_extraction_examples"]):
+        examples = "\n".join(
+            PROMPTS["entity_extraction_examples"][: int(example_number)]
+        )
+    else:
+        examples = "\n".join(PROMPTS["entity_extraction_examples"])
+
+    example_context_base = dict(
+        tuple_delimiter=PROMPTS["DEFAULT_TUPLE_DELIMITER"],
+        record_delimiter=PROMPTS["DEFAULT_RECORD_DELIMITER"],
+        completion_delimiter=PROMPTS["DEFAULT_COMPLETION_DELIMITER"],
+        entity_types=", ".join(entity_types),
+        language=language,
+    )
+    # add example's format
+    examples = examples.format(**example_context_base)
+
+    entity_extract_prompt = CHEATSHEETS["evidence_extraction"]
+
+    context_base = dict(
+        tuple_delimiter=PROMPTS["DEFAULT_TUPLE_DELIMITER"],
+        record_delimiter=PROMPTS["DEFAULT_RECORD_DELIMITER"],
+        completion_delimiter=PROMPTS["DEFAULT_COMPLETION_DELIMITER"],
+        special_interest=special_interest,
+        entity_types=",".join(entity_types),
+        examples=examples,
+        language=language,
+    )
+
+    fill_nightly_prompt = CHEATSHEETS["entity_fill_nightly_extraction"]
+    # we can use the same context_base here
+
+    continue_prompt = CHEATSHEETS["evidence_continue_extraction"].format(**context_base, seed_entities=seed_entities)
+    if_loop_prompt = PROMPTS["entity_if_loop_extraction"]
+
+    processed_chunks = 0
+    total_chunks = len(ordered_chunks)
+    total_entities_count = 0
+    total_relations_count = 0
+
+    # Get lock manager from shared storage
+    from shared_storage import get_graph_db_lock
+
+    graph_db_lock = get_graph_db_lock(enable_logging=False)
+
+    # Use the global use_llm_func_with_cache function from utils.py
+
+    async def _process_extraction_result(
+        result: str, chunk_key: str, file_path: str = "unknown_source"
+    ):
+        """
+        Process a single extraction result (either initial or gleaning)
+        Args:
+            result (str): The extraction result to process
+            chunk_key (str): The chunk key for source tracking
+            file_path (str): The file path for citation
+        Returns:
+            tuple: (nodes_dict, edges_dict) containing the extracted entities and relationships
+        """
+        maybe_nodes = defaultdict(list)
+        maybe_edges = defaultdict(list)
+
+        records = split_string_by_multi_markers(
+            result,
+            [context_base["record_delimiter"], context_base["completion_delimiter"]],
+        )
+
+        for record in records:
+            record = re.search(r"\((.*)\)", record)
+            if record is None:
+                continue
+            record = record.group(1)
+            record_attributes = split_string_by_multi_markers(
+                record, [context_base["tuple_delimiter"]]
+            )
+
+            if_entities = await _handle_single_entity_extraction(
+                record_attributes, chunk_key, file_path
+            )
+            if if_entities is not None:
+                maybe_nodes[if_entities["entity_name"]].append(if_entities)
+                continue
+
+            if_relation = await _handle_single_relationship_extraction(
+                record_attributes, chunk_key, file_path
+            )
+            if if_relation is not None:
+                maybe_edges[(if_relation["src_id"], if_relation["tgt_id"])].append(
+                    if_relation
+                )
+
+        return maybe_nodes, maybe_edges
+
+    async def _nightly_inference_on_initial_result(
+        maybe_nodes: dict[str, list[dict]],
+        maybe_edges: dict[tuple[str, str], list[dict]],
+        entity_types: list[str],
+        chunk_key: str,
+        cheatsheet_knowledge_graph_inst: networkx.Graph,
+        file_path: str = "unknown_source",
+    ):
+        """
+        Process a single extraction result (either initial or gleaning) by using domain knowledge to find nightly
+        inference nodes and relationships
+        Args:
+            maybe_nodes (dict[str, list[dict]]): The extracted entities
+            maybe_edges (dict[tuple[str, str], list[dict]]): The extracted relationships
+            chunk_key (str): The chunk key for source tracking
+            file_path (str): The file path for citation
+        Returns:
+            nightly_nodes (dict[str, list[dict]]): The nightly inference entities
+            nightly_edges (dict[tuple[str, str], list[dict]]): The nightly inference relationships
+        """
+        nightly_nodes = defaultdict(list)
+        nightly_edges = defaultdict(list)
+
+        # Skip nightly inference if no cheatsheet knowledge graph is provided
+        if cheatsheet_knowledge_graph_inst is None:
+            return nightly_nodes, nightly_edges
+
+        # Use domain knowledge to find nightly inference nodes and relationships
+        for entity_name, entity_info_dict_list in maybe_nodes.items():
+            for entity_info_dict in entity_info_dict_list:
+                # Extract entity information
+                entity_type = entity_info_dict['entity_type']
+                description = entity_info_dict['description']
+                if entity_type not in entity_types:
+                    continue
+                neighbors = list(cheatsheet_knowledge_graph_inst.neighbors(entity_type))
+                for neighbor in neighbors:
+                    if neighbor not in entity_types:
+                        continue
+
+                    # Add nightly inference node
+                    nightly_nodes[neighbor].append(
+                        {
+                            "entity_name": "<Nightly Entity Name>",
+                            "entity_type": neighbor,
+                            "description": "<Nightly inference>",
+                            "reference": entity_info_dict['description'],
+                            "source_id": chunk_key,
+                            "file_path": file_path,
+                        }
+                    )
+
+                    nightly_edge_data = cheatsheet_knowledge_graph_inst.get_edge_data(entity_type, neighbor)
+                    nightly_edges[(entity_name, "<Nightly Entity Name>")].append(
+                        dict(
+                            src_id=entity_name,
+                            tgt_id="<Nightly Entity Name>",
+                            description="<Nightly Inference>",
+                            keywords="<Nightly inference>",
+                            reference=entity_info_dict['description'],
+                            source_id=chunk_key,
+                            file_path=file_path,
+                        )
+                    )
+
+        return nightly_nodes, nightly_edges
+    
+    async def nightly_kg_to_text(nightly_nodes, nightly_edges):
+        """
+        Convert nightly nodes and edges into formatted text strings using tuple and record delimiters
+        Args:
+            nightly_nodes (dict[str, list[dict]]): The nightly inference entities
+            nightly_edges (dict[tuple[str, str], list[dict]]): The nightly inference relationships
+        Returns:
+            str: Formatted text containing nodes and edges in the specified format
+        """
+        nightly_nodes_text = []
+        nightly_edges_text = []
+
+        # Process nodes
+        for entity_name, entity_info_list in nightly_nodes.items():
+            for entity_info in entity_info_list:
+                node_str = (
+                    f'("entity"'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{entity_info["entity_name"]}'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{entity_info["entity_type"]}'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{entity_info["description"]}'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{entity_info["source"]}'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{entity_info["reference"]})'
+                )
+                nightly_nodes_text.append(node_str)
+
+        # Process edges
+        for edge_key, edge_info_list in nightly_edges.items():
+            for edge_info in edge_info_list:
+                edge_str = (
+                    f'("relationship"'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{edge_info["src_id"]}'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{edge_info["tgt_id"]}'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{edge_info["description"]}'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{edge_info["keywords"]}'
+                    f'{PROMPTS["DEFAULT_TUPLE_DELIMITER"]}'
+                    f'{edge_info["reference"]})'
+                )
+                nightly_edges_text.append(edge_str)
+
+        # Combine nodes and edges with record delimiters
+        all_records = nightly_nodes_text + nightly_edges_text
+        return f'{PROMPTS["DEFAULT_RECORD_DELIMITER"]}'.join(all_records)
+
+    async def fill_nightly_nodes_edges_with_llm(
+            nightly_nodes: dict[str, list[dict]],
+            nightly_edges: dict[tuple[str, str], list[dict]],
+            input_text: str,
+            chunk_key: str,
+            file_path: str = "unknown_source",
+        ):
+        """
+        Fill nightly nodes and edges with LLM
+        Args:
+            nightly_nodes (dict[str, list[dict]]): The nightly inference entities
+            nightly_edges (dict[tuple[str, str], list[dict]]): The nightly inference relationships
+            source_texts (str): The source texts for LLM
+        Returns:
+            maybe_nodes (dict[str, list[dict]]): The filled nightly inference entities
+            maybe_edges (dict[tuple[str, str], list[dict]]): The filled nightly inference relationships
+        """
+        maybe_nodes = defaultdict(list)
+        maybe_edges = defaultdict(list)
+
+        hint_prompt = fill_nightly_prompt.format(
+            **context_base, input_text="{input_text}", nightly_entities_and_relationships="{nightly_entities_and_relationships}"
+        ).format(**context_base,
+                 input_text=input_text,
+                 nightly_entities_and_relationships=nightly_kg_to_text(nightly_nodes, nightly_edges))
+
+        final_result = await use_llm_func_with_cache(
+            hint_prompt,
+            use_llm_func,
+            llm_response_cache=llm_response_cache,
+            cache_type="extract",
+        )
+
+        print(f"Final result:\n{final_result}")
+
+        history = pack_user_ass_to_openai_messages(hint_prompt, final_result)
+
+        # Process initial extraction with file path
+        maybe_nodes, maybe_edges = await _process_extraction_result(
+            final_result, chunk_key, file_path
+        )
+
+        return maybe_nodes, maybe_edges
+
+    async def _process_single_content(chunk_key_dp: tuple[str, TextChunkSchema]):
+        """Process a single chunk
+        Args:
+            chunk_key_dp (tuple[str, TextChunkSchema]):
+                ("chunk-xxxxxx", {"tokens": int, "content": str, "full_doc_id": str, "chunk_order_index": int})
+        Returns:
+            tuple: (maybe_nodes, maybe_edges) containing extracted entities and relationships
+        """
+        nonlocal processed_chunks
+        chunk_key = chunk_key_dp[0]
+        chunk_dp = chunk_key_dp[1]
+        content = chunk_dp["content"]
+        # Get file path from chunk data or use default
+        file_path = chunk_dp.get("file_path", "unknown_source")
+
+        # Get initial extraction
+        hint_prompt = entity_extract_prompt.format(
+            **context_base, input_text=content, seed_entities=seed_entities
+        )
+
+        final_result = await use_llm_func_with_cache(
+            hint_prompt,
+            use_llm_func,
+            llm_response_cache=llm_response_cache,
+            cache_type="extract",
+        )
+
+        """
+        process initial extraction result @Lu
+
+        """
+
+        history = pack_user_ass_to_openai_messages(hint_prompt, final_result)
+
+        # Process initial extraction with file path
+        maybe_nodes, maybe_edges = await _process_extraction_result(
+            final_result, chunk_key, file_path
+        )
+
+        nightly_nodes, nightly_edges = await _nightly_inference_on_initial_result(
+            maybe_nodes, maybe_edges, chunk_key, file_path, cheatsheet_knowledge_graph_inst
+        )
+
+        glean_nodes, glean_edges = await fill_nightly_nodes_edges_with_llm(nightly_nodes, nightly_edges, content, chunk_key, file_path)
+        # Merge results - only add entities and edges with new names
+        for entity_name, entities in glean_nodes.items():
+            if entity_name not in maybe_nodes:  # Only accetp entities with new name in gleaning stage
+                maybe_nodes[entity_name].extend(entities)
+            
+        for edge_key, edges in glean_edges.items():
+            if edge_key not in maybe_edges:  # Only accetp edges with new name in gleaning stage
+                maybe_edges[edge_key].extend(edges)
+
+        # Process additional gleaning results
+        for now_glean_index in range(entity_extract_max_gleaning):
+            glean_result = await use_llm_func_with_cache(
+                continue_prompt,
+                use_llm_func,
+                llm_response_cache=llm_response_cache,
+                history_messages=history,
+                cache_type="extract",
+            )
+
+            history += pack_user_ass_to_openai_messages(continue_prompt, glean_result)
+
+            # Process gleaning result separately with file path
+            glean_nodes, glean_edges = await _process_extraction_result(
+                glean_result, chunk_key, file_path
+            )
+
+            nightly_nodes, nightly_edges = await _nightly_inference_on_initial_result(
+                glean_nodes, glean_edges, chunk_key, file_path, cheatsheet_knowledge_graph_inst
+            )
+
+            glean_nodes = glean_nodes | nightly_nodes
+            glean_edges = glean_edges | nightly_edges
+
+            # Merge results - only add entities and edges with new names
+            for entity_name, entities in glean_nodes.items():
+                if (
+                    entity_name not in maybe_nodes
+                ):  # Only accetp entities with new name in gleaning stage
+                    maybe_nodes[entity_name].extend(entities)
+            for edge_key, edges in glean_edges.items():
+                if (
+                    edge_key not in maybe_edges
+                ):  # Only accetp edges with new name in gleaning stage
+                    maybe_edges[edge_key].extend(edges)
+
+            if now_glean_index == entity_extract_max_gleaning - 1:
+                break
+
+            if_loop_result: str = await use_llm_func_with_cache(
+                if_loop_prompt,
+                use_llm_func,
+                llm_response_cache=llm_response_cache,
+                history_messages=history,
+                cache_type="extract",
+            )
+            if_loop_result = if_loop_result.strip().strip('"').strip("'").lower()
+            if if_loop_result != "yes":
+                break
+
+        processed_chunks += 1
+        entities_count = len(maybe_nodes)
+        relations_count = len(maybe_edges)
+        log_message = f"Chk {processed_chunks}/{total_chunks}: extracted {entities_count} Ent + {relations_count} Rel"
+        logger.info(log_message)
+        if pipeline_status is not None:
+            async with pipeline_status_lock:
+                pipeline_status["latest_message"] = log_message
+                pipeline_status["history_messages"].append(log_message)
+
+        # Return the extracted nodes and edges for centralized processing
+        return maybe_nodes, maybe_edges
+
+    # Handle all chunks in parallel and collect results
+    tasks = [_process_single_content(c) for c in ordered_chunks]
+    chunk_results = await asyncio.gather(*tasks)
+
+    # Collect all nodes and edges from all chunks
+    all_nodes = defaultdict(list)
+    all_edges = defaultdict(list)
+
+    for maybe_nodes, maybe_edges in chunk_results:
+        # Collect nodes
+        for entity_name, entities in maybe_nodes.items():
+            all_nodes[entity_name].extend(entities)
+
+        # Collect edges with sorted keys for undirected graph
+        for edge_key, edges in maybe_edges.items():
+            sorted_edge_key = tuple(sorted(edge_key))
+            all_edges[sorted_edge_key].extend(edges)
+
+    # Centralized processing of all nodes and edges
+    entities_data = []
+    relationships_data = []
+
+    # Use graph database lock to ensure atomic merges and updates
+    if write_result_to_txt:
+        save_knowledge_graph_to_pickle(all_nodes, all_edges, prefix=prefix, write_result_to_txt=write_result_to_txt)
+    else:
+        async with graph_db_lock:
+            # Process and update all entities at once
+            for entity_name, entities in all_nodes.items():
+                entity_data = await _merge_nodes_then_upsert(
+                    entity_name,
+                    entities,
+                    knowledge_graph_inst,
+                    global_config,
+                    pipeline_status,
+                    pipeline_status_lock,
+                    llm_response_cache,
+                )
+                entities_data.append(entity_data)
+
+            # Process and update all relationships at once
+            for edge_key, edges in all_edges.items():
+                edge_data = await _merge_edges_then_upsert(
+                    edge_key[0],
+                    edge_key[1],
+                    edges,
+                    knowledge_graph_inst,
+                    global_config,
+                    pipeline_status,
+                    pipeline_status_lock,
+                    llm_response_cache,
+                )
+                relationships_data.append(edge_data)
+
+            # Update vector databases with all collected data
+            if entity_vdb is not None and entities_data:
+                data_for_vdb = {
+                    compute_mdhash_id(dp["entity_name"], prefix="ent-"): {
+                        "entity_name": dp["entity_name"],
+                        "entity_type": dp["entity_type"],
+                        "content": f"{dp['entity_name']}\n{dp['description']}",
+                        "source_id": dp["source_id"],
+                        "file_path": dp.get("file_path", "unknown_source"),
+                    }
+                    for dp in entities_data
+                }
+                await entity_vdb.upsert(data_for_vdb)
+
+            if relationships_vdb is not None and relationships_data:
+                data_for_vdb = {
+                    compute_mdhash_id(dp["src_id"] + dp["tgt_id"], prefix="rel-"): {
+                        "src_id": dp["src_id"],
+                        "tgt_id": dp["tgt_id"],
+                        "keywords": dp["keywords"],
+                        "content": f"{dp['src_id']}\t{dp['tgt_id']}\n{dp['keywords']}\n{dp['description']}",
+                        "source_id": dp["source_id"],
+                        "file_path": dp.get("file_path", "unknown_source"),
+                    }
+                    for dp in relationships_data
+                }
+                await relationships_vdb.upsert(data_for_vdb)
+
+    # Update total counts
+    total_entities_count = len(entities_data)
+    total_relations_count = len(relationships_data)
+
+    log_message = f"Extracted {total_entities_count} entities + {total_relations_count} relationships (total)"
+    logger.info(log_message)
+    if pipeline_status is not None:
+        async with pipeline_status_lock:
+            pipeline_status["latest_message"] = log_message
+            pipeline_status["history_messages"].append(log_message)
+
+
+
 
 async def _link_relationships_across_entities(
     all_nodes: dict[str, list[dict]],
@@ -1059,3 +1564,16 @@ async def build_structured_knowledge_graph(
     networkx_graph.add_nodes_from(linkage_nodes)
     networkx_graph.add_edges_from(linkage_edges)
     return networkx_graph
+
+async def preprocessing_claim(claim:str,
+                              answer: str,
+                              llm_func: Callable,
+                              llm_response_cache: BaseKVStorage,
+                              max_tokens: int,
+                              history_messages: list[dict[str, str]])->str:
+    prompt = CHEATSHEETS.get("claim_preprocessing")
+    prompt = prompt.format(claim=claim, answer=answer)
+
+    response = await llm_func(prompt, history_messages=history_messages, max_tokens=max_tokens)
+
+    return response

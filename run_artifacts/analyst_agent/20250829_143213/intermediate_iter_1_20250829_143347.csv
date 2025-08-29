@@ -1,0 +1,38 @@
+Crop Type,Crop Yield,Crop Yield Unit,Climate Drivers,Climate Drivers Value,Climate Drivers Unit,Experimental Design,Location,Time,Source in paper
+maize,-1,qualitative,temperature,1,°C,simulation analysis,N/A,monsoon season,Results of simulation analysis indicate that maize yields in monsoon season are adversely affected due to rise in atmospheric temperatures in all three regions (Fig. 2a). Grain yield decreased with each degree rise in atmospheric temperature.
+maize,-7,%,temperature,1,°C,simulation analysis,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,-11,%,temperature,2,°C,simulation analysis,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,-15,%,temperature,3,°C,simulation analysis,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,-22,%,temperature,4,°C,simulation analysis,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,-33,%,temperature,5,°C,simulation analysis,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,+1,qualitative,rainfall,20,%,simulation analysis,N/A,N/A,"However, a 20% increase in rainfall is projected to offset the yield loss due to 1°C rise in temperature."
+maize,+1,qualitative,rainfall,30,%,simulation analysis,N/A,N/A,"Similarly, a 30% increase in rainfall is predicted to offset the adverse impact of 2°C rise in temperature."
+maize,-8,%,temperature,1,°C,simulation analysis,MIGP,N/A,"In MIGP region, yield reduction of about 8–35% with 1–5°C rise in atmospheric temperature is projected."
+maize,-35,%,temperature,5,°C,simulation analysis,MIGP,N/A,"In MIGP region, yield reduction of about 8–35% with 1–5°C rise in atmospheric temperature is projected."
+maize,+1,qualitative,rainfall,N/A,N/A,simulation analysis,MIGP,N/A,"In this region, increase in rainfall is likely to offset the temperature rise up to 0.75°C and any increase beyond this temperature will adversely impact the yields, in spite of increase in rainfall."
+maize,-10,%,temperature,1,°C,simulation analysis,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,-15,%,temperature,1,°C,simulation analysis,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,-23,%,temperature,1,°C,simulation analysis,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,-27,%,temperature,1,°C,simulation analysis,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,-35,%,temperature,1,°C,simulation analysis,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,+1,qualitative,rainfall,10,%,simulation analysis,SP,N/A,A 10% increase in rainfall will offset the reduction in yield due to 1°C rise in temperature in this region.
+maize,0.1,%,CO₂,450,ppmV,simulation analysis,N/A,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,3.4,%,CO₂,450,ppmV,simulation analysis,N/A,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,0.6,%,CO₂,550,ppmV,simulation analysis,N/A,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,7.2,%,CO₂,550,ppmV,simulation analysis,N/A,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,+1,qualitative,water stress,N/A,N/A,simulation analysis,N/A,N/A,"The benefits are projected to be high in mild water stress conditions, but they are likely to reduce in severe water stress situations (Table 3)."
+maize,-1,qualitative,water stress,N/A,N/A,simulation analysis,N/A,N/A,"The benefits are projected to be high in mild water stress conditions, but they are likely to reduce in severe water stress situations (Table 3)."
+maize,1.5,times,N/A,N/A,N/A,N/A,N/A,winter,Maize crop during winter is provided with assured irrigation and thus yields about 1.5 times more than that of monsoon crop.
+maize,+1,qualitative,temperature,2.7,°C,simulation analysis,UIGP,N/A,"In UIGP, rise in temperatures up to 2.7°C is likely to improve the maize yields."
+maize,13,%,temperature,2,°C,simulation analysis,UIGP,N/A,"In UIGP, this beneficial effect with rise in temperature is projected to be more up to 2°C rise (13% increase over current yields)."
+maize,-5,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,-13,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,-17,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,-21,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,-35,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,5,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,5,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,-25,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,-50,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,-5,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model
+maize,-35,%,minimum and maximum temperatures,rainfall,CO₂ concentrations,N/A,N/A,HadCM3 model,Bern CC model

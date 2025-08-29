@@ -1,0 +1,10 @@
+All 32 records have a non-empty and accurate 'Source in paper' field containing the exact text snippet.
+Numerical interpretation for yield multipliers (e.g., "1.5 times more" -> +50%) has been applied.
+Sequential yield/driver linking (e.g., UIGP, SP regions with 1, 2, 3...°C rise) has been correctly parsed into separate records.
+Non-climatic factors like "assured irrigation" have been identified and included in 'Climate Drivers'.
+'Climate Drivers Value' and 'Climate Drivers Unit' are populated where explicit numerical data or clear inference was possible. For qualitative drivers, N/A is used.
+For scenarios involving multiple drivers with a combined offsetting effect (e.g., rainfall offsetting temperature impact), the distinct drivers are listed jointly in the 'Climate Drivers' field, and 'Crop Yield' is described qualitatively as "Offsetting effect" or "Offset reduction" with 'Crop Yield Unit' as N/A, as no specific net numerical yield change was provided for these interactions.
+Structured data representation prioritizes separate records for distinct relationships, avoiding concatenation unless the source text described a combined effect. For example, temperature ranges resulting in yield ranges for MIGP are kept in a single record as presented in the source.
+For statements where 'Experimental Design' or 'Location' were not explicitly mentioned in the exact snippet but implied by broader context, they are marked as N/A to adhere strictly to traceability for the 'Source in paper' field. However, in cases like MIGP, SP, UIGP regions mentioned in the direct source sentence, they are included. Crop type 'maize' is consistently inferred as it's the main subject.
+Temporal information (e.g., 'winter season', '2020-2050', '2080') is extracted into the 'Time' field.
+Qualitative yield impacts (e.g., "Decreased", "Improved yields", "Reduced CO2 benefits") are included where no specific numerical yield was present, with 'Crop Yield Unit' as N/A.

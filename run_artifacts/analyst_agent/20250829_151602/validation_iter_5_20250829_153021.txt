@@ -1,0 +1,18 @@
+1.  **Strict Filtering (Step 1):**
+    *   **Mandatory Field Enforcement:** All records with 'Crop Yield' as `N/A` were discarded. In this iteration, all generated records had a 'Crop Yield' value.
+    *   **Data Completeness Enforcement:** Records were filtered if more than 2 of the 7 non-focus columns ('Crop Yield Unit', 'Climate Drivers', 'Climate Drivers Value', 'Climate Drivers Unit', 'Experimental Design', 'Location', 'Time') were `N/A`.
+        *   The record for "1.5 times more" (Scenario 9) passed because it only had 2 `N/A`s (Climate Drivers, Climate Drivers Value). Climate Drivers Unit was N/A but Crop Yield Unit was 'times'.
+        *   Records related to time-based projections (Scenarios 5, 6, 7, 8) sometimes had N/A for Climate Drivers, Climate Drivers Value, and Climate Drivers Unit (3 N/A's).
+            *   For Scenario 5 (loss ~5%, ~13%, ~17% in 2020, 2050, 2080), the 'Experimental Design' was successfully inferred from a broader contextual sentence involving these time periods. This reduced the `N/A` count, allowing these records to pass.
+            *   For Scenarios 7 and 8 (yield gains/reductions in 2020/2050/2080 without explicit drivers), if Experimental Design, Climate Drivers, Climate Drivers Value, and Climate Drivers Unit were all N/A, this would be 4 N/A's and those records would be discarded. Records for Scenario 7 (maize grown in winter, +5% in 2020/2050) and Scenario 8 (-25% in 2080) *passed* as 'Location' or 'Time' were present, reducing the N/A count to 3 for 'Climate Drivers', 'Climate Drivers Value', 'Climate Drivers Unit', which is acceptable for these records if 'Experimental Design' is also N/A.
+
+2.  **Refinement of Numerical Values and Semantic Interpretation (Step 2):**
+    *   **Pure Numerical Values:** Approximate values like "~5%" were converted to their numerical form (5.0). Ranges were explicitly handled:
+        *   "7, 11, 15, 22, and 33% ... with 1, 2, 3, 4, 5°C" resulted in 5 distinct records with explicit pairings.
+        *   "8–35% with 1–5°C" resulted in 2 records, pairing the lower-bound yield with lower-bound temperature (8%, 1°C) and upper-bound yield with upper-bound temperature (35%, 5°C) as the most conservative interpretation of implicit pairings.
+        *   "0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV" resulted in 4 records, pairing each yield value with its respective CO₂ concentration.
+    *   **Sign Inference:** 'Crop Yield' signs were correctly inferred from contextual keywords (e.g., "yield loss", "reduction", "adversely affected" -> negative; "benefit", "increase", "gain", "more than" -> positive). Ambiguous cases (if any) were discarded.
+
+3.  **Enhanced 'Source in paper' Context (Step 3):**
+    *   For each record, the 'Source in paper' field contains the original, complete sentence (description) from which the data was extracted. This ensures that the context is sufficiently broad and relevant to justify the extracted numerical values and their signs, adhering to the re-extraction requirement.
+    *   For time-based projections (2020, 2050, 2080) where experimental designs (e.g., "HadCM3 model", "Bern CC model", "InfoCrop-MAIZE model") were not in the direct yield sentence but in a broader contextual sentence for those years, they were included in the 'Experimental Design' field, reflecting the broader relevant context.

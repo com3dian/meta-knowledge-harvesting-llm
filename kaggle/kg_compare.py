@@ -87,13 +87,14 @@ def get_src_tgt_dict(similarity_matrix, claim_node_list, reference_node_list):
         # Fit KMeans with 2 clusters
         kmeans = KMeans(n_clusters=2, random_state=0, n_init=10)
         row_reshaped = row.reshape(-1, 1)
+        standard_threshold = 0.25
         if len(row_reshaped) <= 1:
-            threshold = 0.25 - 0.25*1/len(similarity_matrix)
+            threshold = standard_threshold - standard_threshold*1/len(similarity_matrix)
             continue
         kmeans.fit(row_reshaped)
         centers = np.sort(kmeans.cluster_centers_.flatten())
         threshold = np.mean(centers)  # Midpoint between the two centers
-        threshold = max(threshold, 0.25 - 0.25*1/len(similarity_matrix))
+        threshold = max(threshold, standard_threshold - standard_threshold*1/len(similarity_matrix))
 
         # Find values above threshold
         anomalies = row[row > threshold]

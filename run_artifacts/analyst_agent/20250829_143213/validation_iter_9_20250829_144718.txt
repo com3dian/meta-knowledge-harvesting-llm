@@ -1,0 +1,6 @@
+All extracted records comply with the strict requirement that the 'Source in paper' snippet explicitly and entirely contains all five core values: 'Crop Yield', 'Crop Yield Unit', 'Climate Drivers', 'Climate Drivers Value', and 'Climate Drivers Unit'.
+- 'Crop Type' defaults to 'maize' as per instructions or is explicitly stated.
+- 'Crop Yield' and 'Climate Drivers Value' are strictly numerical, with positive/negative signs and no units.
+- Deconstruction of ranges and lists within compliant snippets into separate records was performed where applicable, ensuring each new record retains the same comprehensive 'Source in paper' snippet.
+- Non-compliant snippets where the five core values were not fully and explicitly present in a single contiguous segment were discarded.
+- 'Experimental Design', 'Location', and 'Time' were extracted from closely related context or marked as 'N/A' if not explicitly stated or clearly inferable from immediate surroundings, as allowed by the instructions. For temperature-related entries, "simulation analysis" was inferred from nearby sentences. For CO2-related entries, "InfoCrop-MAIZE model, Bern CC model simulations" were used due to their specific mention regarding CO2 concentrations.

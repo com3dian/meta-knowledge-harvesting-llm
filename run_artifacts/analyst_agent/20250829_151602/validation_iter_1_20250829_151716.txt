@@ -1,0 +1,8 @@
+- All extracted records include a 'Crop Type' (maize), 'Crop Yield', and 'Source in paper' as mandatory fields.
+- 'Crop Yield' and 'Climate Drivers Value' are numerical, correctly signed, and unit-free.
+- 'Crop Yield Unit' and 'Climate Drivers Unit' are extracted when available.
+- For records involving ranges (e.g., "7, 11, 15, 22, and 33% with 1, 2, 3, 4, 5°C"), individual records are created for each pair. For ranges like "8-35% with 1-5°C", the bounds are taken and matched (e.g., 8% with 1°C, 35% with 5°C). For "1°C rise in temperature" associated with a list of reductions, a sequential pairing (1°C with first reduction, 2°C with second, etc.) was assumed based on the pattern of other data.
+- For records from the climate change scenarios (e.g., 2020, 2050, 2080), all three mentioned models ("HadCM3 model, Bern CC model, InfoCrop-MAIZE model") are combined under 'Experimental Design' as they are described as being coupled for these scenarios.
+- 'Climate Drivers' is explicitly extracted when present (e.g., 'temperature', 'CO₂'). When only "climate change" is mentioned or implied, 'N/A' is used for specific drivers.
+- 'Location' and 'Time' are extracted from the description or associated entities when available, otherwise 'N/A'.
+- The truncated entity descriptions for -50 and -60 Crop Yield were interpreted based on the closest preceding context in the provided data (2080 scenario, MIGP/SP locations).

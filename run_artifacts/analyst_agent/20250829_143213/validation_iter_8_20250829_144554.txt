@@ -1,0 +1,11 @@
+All extracted records strictly adhere to the 'Source in paper' enforcement rule, ensuring that each record's 'Source in paper' column contains a single, comprehensive, verbatim text snippet that explicitly and entirely supports the five core values: 'Crop Yield', 'Crop Yield Unit', 'Climate Drivers', 'Climate Drivers Value', and 'Climate Drivers Unit'. Records failing this criterion were entirely discarded. No "N/A" or empty strings are present in the 'Source in paper' column.
+
+Statements containing multiple yield or climate driver values (e.g., ranges or lists) were deconstructed into separate records as requested.
+
+'Crop Yield' and 'Climate Drivers Value' are strictly numerical, with positive values indicating an increase and negative values indicating a decrease, as applicable. 'Crop Yield Unit' and 'Climate Drivers Unit' contain valid units (%, °C, ppmV) derived directly from the source snippets.
+
+'Experimental Design', 'Location', and 'Time' were extracted where clearly present in the supporting snippet or a closely related context from the `ENTITIES DATA`.
+-   For temperature-related impacts across UIGP, MIGP, and SP regions, 'simulation analysis' was identified as the experimental design based on the overarching statement "Results of simulation analysis indicate that maize yields in monsoon season are adversely affected due to rise in atmospheric temperatures in all three regions (Fig. 2a)."
+-   For CO2-related impacts, 'InfoCrop-MAIZE model simulations' was used as the experimental design, derived from the context linking CO2 concentrations to the InfoCrop-MAIZE model.
+-   'Location' was extracted when explicitly mentioned in the source snippet (UIGP, MIGP, SP).
+-   'Time' was marked as "N/A" for all records, as specific timeframes (e.g., 2020, 2050, 2080) were not explicitly and entirely supported *within the specific snippets* for the listed five core values, even if mentioned in broader context for the experimental models.

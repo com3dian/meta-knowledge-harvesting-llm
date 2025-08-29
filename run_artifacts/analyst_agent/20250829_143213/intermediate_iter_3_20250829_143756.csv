@@ -1,0 +1,19 @@
+Crop Type,Crop Yield,Crop Yield Unit,Climate Drivers,Climate Drivers Value,Climate Drivers Unit,Experimental Design,Location,Time,Source in paper
+maize,-7,%,temperature,1,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,UIGP
+maize,-11,%,temperature,2,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,UIGP
+maize,-15,%,temperature,3,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,UIGP
+maize,-22,%,temperature,4,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,UIGP
+maize,-33,%,temperature,5,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,UIGP
+maize,-8,%,temperature,1,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,MIGP
+maize,-35,%,temperature,5,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,MIGP
+maize,-10,%,temperature,1,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,SP
+maize,-15,%,temperature,2,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,SP
+maize,-23,%,temperature,3,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,SP
+maize,-27,%,temperature,4,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,SP
+maize,-35,%,temperature,5,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,SP
+maize,10,%,rainfall,10,%,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,SP
+maize,0.1,%,CO2,450,ppmV,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,N/A
+maize,3.4,%,CO2,450,ppmV,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,N/A
+maize,0.6,%,CO2,550,ppmV,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,N/A
+maize,7.2,%,CO2,550,ppmV,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,N/A
+maize,13,%,temperature,2,°C,HadCM3 model,Bern CC model,InfoCrop-MAIZE model coupled simulation,UIGP

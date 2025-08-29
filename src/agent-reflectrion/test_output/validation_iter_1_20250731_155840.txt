@@ -1,6 +1,0 @@
-Records successfully extracted and formatted based on provided entities and links.
-Priority given to 'Crop Type' and 'Crop Yield' to ensure they are not empty.
-Numerical values for 'Crop Yield' and 'Climate Drivers Value' extracted without units.
-Associated units placed in respective unit columns.
-Attempted to cross-reference and link information from other parts of the JSON to fill missing details, strictly avoiding hallucination.
-Total records extracted: 31

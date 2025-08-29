@@ -1,0 +1,17 @@
+1.  **Refine Extraction and Mapping Logic:**
+    *   Parsing logic was implemented to extract multiple Crop Yields and Climate Driver Values from a single complex description by:
+        *   Prioritizing explicit (Crop Yield, Climate Driver Value) pairs found in the `LINKS/RELATIONSHIPS DATA`.
+        *   If no explicit links, and when multiple Crop Yields and Climate Driver Values were present in the same description, a regex-based splitting mechanism (e.g., splitting by " and ") was used to associate localized yield ranges/values with their nearest climate driver values and units (e.g., "0.1 to 3.4% at 450 ppmV" was correctly parsed to create two records, each with 450 ppmV).
+        *   Fallback for `Crop Yield Unit` and `Climate Drivers Unit` was implemented by checking for common symbols like '%' or '°C' within the description if specific unit entities were not linked.
+2.  **Enhance Semantic Interpretation for 'Crop Yield':**
+    *   A `parse_crop_yield_with_sign` function was implemented. It correctly assigned negative signs to values explicitly marked as negative (e.g., "-7") or those appearing in descriptions containing keywords like "loss", "reduction", "adversely affected", "decreased". Positive signs were ensured for values in descriptions with "benefit", "increase", "gain", "improve", "offset", "beneficial effect", "yield gains". This handled cases like "benefit the crop yield ranging from 0.1 to 3.4%" to yield positive `0.1` and `3.4`.
+3.  **Implement 'Climate Drivers' Inference:**
+    *   The `infer_climate_driver` function was used to assign a `Climate Drivers` value if it was `N/A`. Inference was based on `Climate Drivers Unit` (e.g., '°C' -> 'temperature', 'ppmV' -> 'CO2', '%' with 'rainfall'/'precipitation' -> 'rainfall') or keywords in the `Source in paper` description. This was applied during initial record creation and as a final post-processing step to catch any remaining `N/A`s. Multiple records were generated where multiple climate driver pairs were present in a single description (e.g., for the range/list patterns).
+4.  **Improve Contextual Search for Non-Focus Columns:**
+    *   `Experimental Design`, `Location`, and `Time` were extracted if entities of these types had descriptions identical to the `Source in paper` of the core record. This ensures accuracy by associating these details directly from the most relevant contextual sentence. While this might result in more `N/A`s for these columns if they are not explicitly present in the same core descriptive text, it adheres to preventing misalignment by not over-inferring from distant contexts.
+5.  **Strict Post-Extraction Filtering:**
+    *   The final set of records was filtered as per the rules:
+        *   Records were discarded if `Crop Type`, `Crop Yield`, or `Source in paper` were `N/A`.
+        *   Records were discarded if more than 2 of the 7 non-focus columns (`Crop Yield Unit`, `Climate Drivers`, `Climate Drivers Value`, `Climate Drivers Unit`, `Experimental Design`, `Location`, `Time`) were `N/A`.
+
+The process aimed for maximum quantity of valid data while strictly adhering to the specified validation and inference rules, ensuring correct mapping and semantic interpretation. Deduplication was performed to avoid identical rows.

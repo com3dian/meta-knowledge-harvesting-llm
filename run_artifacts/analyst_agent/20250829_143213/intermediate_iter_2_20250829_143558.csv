@@ -1,0 +1,33 @@
+Crop Type,Crop Yield,Crop Yield Unit,Climate Drivers,Climate Drivers Value,Climate Drivers Unit,Experimental Design,Location,Time,Source in paper
+maize,Decreased,N/A,atmospheric temperature,+1,°C,N/A,N/A,N/A,Grain yield decreased with each degree rise in atmospheric temperature.
+maize,-7,%,atmospheric temperatures,+1,°C,N/A,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,-11,%,atmospheric temperatures,+2,°C,N/A,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,-15,%,atmospheric temperatures,+3,°C,N/A,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,-22,%,atmospheric temperatures,+4,°C,N/A,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,-33,%,atmospheric temperatures,+5,°C,N/A,UIGP,N/A,"The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5°C degrees rise in atmospheric temperatures."
+maize,Offsetting effect,N/A,rainfall increase,temperature rise,+20,+1,%,°C,N/A
+maize,Offsetting effect,N/A,rainfall increase,temperature rise,+30,+2,%,°C,N/A
+maize,-8 to -35,%,atmospheric temperature,+1 to +5,°C,N/A,MIGP,N/A,"In MIGP region, yield reduction of about 8–35% with 1–5°C rise in atmospheric temperature is projected."
+maize,Offsetting effect,N/A,rainfall increase,temperature rise,N/A,+0.75,N/A,°C,N/A
+maize,-10,%,temperature,+1,°C,N/A,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,-15,%,temperature,+2,°C,N/A,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,-23,%,temperature,+3,°C,N/A,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,-27,%,temperature,+4,°C,N/A,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,-35,%,temperature,+5,°C,N/A,SP,N/A,"The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1°C rise in temperature."
+maize,Offsetting effect,N/A,rainfall increase,temperature rise,+10,+1,%,°C,N/A
+maize,+0.1 to +3.4,%,carbon dioxide concentration,450,ppmV,N/A,N/A,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,+0.6 to +7.2,%,carbon dioxide concentration,550,ppmV,N/A,N/A,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,Reduced CO2 benefits,N/A,severe water stress,N/A,N/A,N/A,N/A,N/A,"The benefits are projected to be high in mild water stress conditions, but they are likely to reduce in severe water stress situations (Table 3)."
+maize,+50,%,assured irrigation,N/A,N/A,N/A,N/A,winter season,Maize crop during winter is provided with assured irrigation and thus yields about 1.5 times more than that of monsoon crop.
+maize,Improved yields,N/A,temperature,+2.7,°C,N/A,UIGP,N/A,"In UIGP, rise in temperatures up to 2.7°C is likely to improve the maize yields."
+maize,+13,%,temperature,+2,°C,N/A,UIGP,N/A,"In UIGP, this beneficial effect with rise in temperature is projected to be more up to 2°C rise (13% increase over current yields)."
+maize,Offset reduction,N/A,temperature,rainfall increase,more irrigation,+2.7,N/A,N/A,°C
+maize,-5,%,climate change,N/A,N/A,N/A,N/A,2020,"The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+maize,-13,%,climate change,N/A,N/A,N/A,N/A,2050,"The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+maize,-17,%,climate change,N/A,N/A,N/A,N/A,2080,"The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+maize,-21,%,climate change,N/A,N/A,N/A,SP,2020,"In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+maize,-35,%,climate change,N/A,N/A,N/A,SP,2050 and later,"In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+maize,+5,%,N/A,N/A,N/A,N/A,UIGP,winter season,2020-2050
+maize,-25,%,N/A,N/A,N/A,N/A,UIGP,winter season,2080
+maize,-50,%,N/A,N/A,N/A,N/A,MIGP,winter season,2080
+maize,-40,%,N/A,N/A,N/A,N/A,SP,winter season,2080

@@ -20,7 +20,8 @@ import tiktoken
 from prompt import PROMPTS
 from dotenv import load_dotenv
 from datetime import datetime
-
+import os
+import glob
 
 # Use TYPE_CHECKING to avoid circular imports
 if TYPE_CHECKING:
@@ -1493,7 +1494,7 @@ class TokenTracker:
             f"Total tokens: {usage['total_tokens']}"
         )
     
-def save_knowledge_graph_to_pickle(nodes, edges, write_result_to_txt=False):
+def save_knowledge_graph_to_pickle(nodes, edges, prefix="", write_result_to_txt=False):
     """
     Save knowledge graph results to a pickle file.
     
@@ -1509,13 +1510,13 @@ def save_knowledge_graph_to_pickle(nodes, edges, write_result_to_txt=False):
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     
     # Save to pickle file
-    pickle_file = f"outputs/result_{timestamp}.pkl"
+    pickle_file = f"outputs/{prefix}_result_{timestamp}.pkl"
     with open(pickle_file, 'wb') as f:
         pickle.dump((nodes, edges), f)
     
     # Optionally save to text file as well
     if write_result_to_txt:
-        txt_file = f"outputs/result_{timestamp}.txt"
+        txt_file = f"outputs/{prefix}_result_{timestamp}.txt"
         with open(txt_file, "w") as f:
             f.write(f"Entities: {nodes}\n")
             f.write(f"Relationships: {edges}\n")
@@ -1561,3 +1562,66 @@ def get_latest_result():
     # Read the most recent file
     latest_file = os.path.join(output_dir, result_files[0])
     return read_knowledge_graph_from_pickle(latest_file)
+
+async def get_latest_result_by_prefix(prefix: str):
+    """
+    Get the most recent knowledge graph result for a specific prefix.
+    
+    Args:
+        prefix (str): The prefix to search for (e.g., "claim_batch2_0")
+        
+    Returns:
+        tuple: (nodes_dict, edges_dict) containing the extracted entities and relationships
+    """
+    output_dir = "outputs"
+    # Get all pickle files that start with the given prefix
+    result_files = [f for f in os.listdir(output_dir) 
+                   if f.endswith(".pkl") and f.startswith(prefix)]
+    
+    if not result_files:
+        print(f"No result files found with prefix '{prefix}' in the outputs directory")
+        return None, None
+    
+    # Sort files by timestamp (newest first)
+    # Extract timestamp from filename and sort
+    import re
+    timestamp_pattern = re.compile(r"(\d{8}_\d{6})")
+    
+    def get_timestamp(filename):
+        match = timestamp_pattern.search(filename)
+        return match.group(1) if match else "00000000_000000"
+    
+    result_files.sort(key=get_timestamp, reverse=True)
+    
+    # Read the most recent file
+    latest_file = os.path.join(output_dir, result_files[0])
+    return read_knowledge_graph_from_pickle(latest_file)
+
+def find_files_by_timestamp(start_timestamp: str, end_timestamp: str) -> list:
+    """
+    Find all files in the outputs directory whose timestamp is between the given start and end timestamps (inclusive).
+    Assumes timestamp in filename is in format 'YYYYMMDD_HHMMSS'.
+    
+    Args:
+        start_timestamp (str): Start timestamp string in format 'YYYYMMDD_HHMMSS'
+        end_timestamp (str): End timestamp string in format 'YYYYMMDD_HHMMSS'
+        
+    Returns:
+        list: List of matching filenames
+    """
+    import re
+    # Ensure outputs directory exists
+    os.makedirs('outputs', exist_ok=True)
+    
+    # Pattern to match timestamp in filename
+    timestamp_pattern = re.compile(r"(\d{8}_\d{6})")
+    
+    matching_files = []
+    files = glob.glob("outputs/*.pkl")
+    for file in files:
+        match = timestamp_pattern.search(file)
+        if match:
+            file_timestamp = match.group(1)
+            if start_timestamp <= file_timestamp <= end_timestamp:
+                matching_files.append(file)
+    return matching_files

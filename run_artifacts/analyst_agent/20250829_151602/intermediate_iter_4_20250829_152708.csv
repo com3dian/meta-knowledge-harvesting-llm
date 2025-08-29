@@ -1,0 +1,72 @@
+Crop Type,Crop Yield,Crop Yield Unit,Climate Drivers,Climate Drivers Value,Climate Drivers Unit,Experimental Design,Location,Time,Source in paper
+maize,-7.0,%,temperature,1,°C,N/A,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,-11.0,%,temperature,2,°C,N/A,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,-15.0,%,temperature,3,°C,N/A,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,-22.0,%,temperature,4,°C,N/A,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,-33.0,%,temperature,5,°C,N/A,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,-8.0,%,temperature,1,°C,N/A,MIGP,N/A,In MIGP region
+maize,-35.0,%,temperature,5,°C,N/A,MIGP,N/A,In MIGP region
+maize,0.1,%,CO2,450,ppmV,N/A,N/A,N/A,Even though maize is a C4 plant
+maize,3.4,%,CO2,450,ppmV,N/A,N/A,N/A,Even though maize is a C4 plant
+maize,0.6,%,CO2,550,ppmV,N/A,N/A,N/A,Even though maize is a C4 plant
+maize,7.2,%,CO2,550,ppmV,N/A,N/A,N/A,Even though maize is a C4 plant
+maize,13.0,%,temperature,2,°C,N/A,UIGP,N/A,In UIGP
+maize,-5.0,%,N/A,N/A,N/A,N/A,N/A,2020,The loss from current yields is projected to be ~5%
+maize,-13.0,%,N/A,N/A,N/A,N/A,N/A,2050,The loss from current yields is projected to be ~5%
+maize,-17.0,%,N/A,N/A,N/A,N/A,N/A,2080,The loss from current yields is projected to be ~5%
+maize,-21.0,%,N/A,N/A,N/A,SP,2020,In SP,monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later.
+maize,-35.0,%,N/A,N/A,N/A,SP,2050,In SP,monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later.
+maize,5.0,%,N/A,N/A,N/A,N/A,UIGP,2020,As far as maize crop grown in winter is concerned
+maize,-25.0,%,N/A,N/A,N/A,N/A,N/A,2080,However
+maize,-50.0,%,N/A,N/A,N/A,N/A,MIGP,2080,In MIGP
+maize,-25.0,%,N/A,N/A,N/A,N/A,MIGP,2020,In MIGP
+maize,-33.0,%,N/A,N/A,N/A,N/A,MIGP,2050,In MIGP
+maize,1.5,times,N/A,N/A,N/A,N/A,N/A,N/A,Maize crop during winter is provided with assured irrigation and thus yields about 1.5 times more than that of monsoon crop.
+maize,N/A,N/A,temperature,1,°C,simulation analysis,N/A,N/A,Results of simulation analysis indicate that maize yields in monsoon season are adversely affected due to rise in atmospheric temperatures in all three regions (Fig. 2a).
+maize,N/A,N/A,temperature,N/A,°C,N/A,N/A,N/A,Grain yield decreased with each degree rise in atmospheric temperature.
+maize,N/A,N/A,rainfall,20,%,N/A,N/A,N/A,However
+maize,N/A,N/A,rainfall,30,%,N/A,N/A,N/A,Similarly
+maize,N/A,N/A,rainfall,N/A,°C,N/A,N/A,N/A,In this region
+maize,N/A,N/A,temperature,0.75,°C,N/A,N/A,N/A,In this region
+maize,N/A,N/A,rainfall,10,%,N/A,N/A,N/A,A 10% increase in rainfall will offset the reduction in yield due to 1°C rise in temperature in this region.
+maize,N/A,N/A,water stress,N/A,N/A,N/A,N/A,N/A,The benefits are projected to be high in mild water stress conditions
+maize,N/A,N/A,precipitation,N/A,N/A,N/A,N/A,N/A,Table 3 Influence of atmospheric carbon dioxide concentration on maize yields in rainfall deficit conditions during monsoon season
+maize,N/A,N/A,CO2 concentrations,N/A,N/A,N/A,N/A,N/A,Table 3 Influence of atmospheric carbon dioxide concentration on maize yields in rainfall deficit conditions during monsoon season
+maize,N/A,N/A,temperature,2.7,°C,N/A,UIGP,N/A,In UIGP
+maize,N/A,N/A,rainfall,N/A,N/A,N/A,N/A,N/A,In the event of further increase in temperature to about 2.7°C
+maize,N/A,N/A,temperature,2.7,°C,N/A,N/A,N/A,In the event of further increase in temperature to about 2.7°C
+maize,N/A,N/A,temperature,N/A,N/A,HadCM3 model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,rainfall,N/A,N/A,HadCM3 model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2,N/A,N/A,HadCM3 model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,temperature,N/A,N/A,HadCM3 model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,rainfall,N/A,N/A,HadCM3 model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2,N/A,N/A,HadCM3 model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,temperature,N/A,N/A,HadCM3 model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,rainfall,N/A,N/A,HadCM3 model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2,N/A,N/A,HadCM3 model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,temperature,N/A,N/A,Bern CC model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,rainfall,N/A,N/A,Bern CC model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2,N/A,N/A,Bern CC model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,temperature,N/A,N/A,Bern CC model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,rainfall,N/A,N/A,Bern CC model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2,N/A,N/A,Bern CC model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,temperature,N/A,N/A,Bern CC model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,rainfall,N/A,N/A,Bern CC model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2,N/A,N/A,Bern CC model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,-10.0,%,temperature,1,°C,N/A,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,-15.0,%,temperature,1,°C,N/A,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,-23.0,%,temperature,1,°C,N/A,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,-27.0,%,temperature,1,°C,N/A,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,-35.0,%,temperature,1,°C,N/A,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,N/A,N/A,minimum and maximum temperatures,N/A,N/A,HadCM3 model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,minimum and maximum temperatures,N/A,N/A,HadCM3 model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,minimum and maximum temperatures,N/A,N/A,HadCM3 model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2 concentrations,N/A,N/A,HadCM3 model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2 concentrations,N/A,N/A,HadCM3 model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2 concentrations,N/A,N/A,HadCM3 model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,minimum and maximum temperatures,N/A,N/A,Bern CC model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,minimum and maximum temperatures,N/A,N/A,Bern CC model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,minimum and maximum temperatures,N/A,N/A,Bern CC model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2 concentrations,N/A,N/A,Bern CC model,N/A,2020,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2 concentrations,N/A,N/A,Bern CC model,N/A,2050,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020
+maize,N/A,N/A,CO2 concentrations,N/A,N/A,Bern CC model,N/A,2080,The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020

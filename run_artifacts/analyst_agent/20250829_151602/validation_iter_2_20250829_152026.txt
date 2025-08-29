@@ -1,0 +1,17 @@
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'Results of simulation analysis indicate that maize yields in monsoon season are adversely affected due to rise in atmospheric temperatures in all three regions (Fig. 2a).'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'Grain yield decreased with each degree rise in atmospheric temperature.'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'However, a 20% increase in rainfall is projected to offset the yield loss due to 1°C rise in temperature.'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'Similarly, a 30% increase in rainfall is predicted to offset the adverse impact of 2°C rise in temperature.'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'In this region, increase in rainfall is likely to offset the temperature rise up to 0.75°C and any increase beyond this temperature will adversely impact the yields, in spite of increase in rainfall.'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'A 10% increase in rainfall will offset the reduction in yield due to 1°C rise in temperature in this region.'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'The benefits are projected to be high in mild water stress conditions, but they are likely to reduce in severe water stress situations (Table 3).'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'Table 3 Influence of atmospheric carbon dioxide concentration on maize yields in rainfall deficit conditions during monsoon season'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'In UIGP, rise in temperatures up to 2.7°C is likely to improve the maize yields.'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO₂ concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model.'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'In the event of further increase in temperature to about 2.7°C, the reduction in yields can be offset only if rainfall is increased or more irrigation is provided.'
+Excluded record from description (lacks Crop Type or Crop Yield directly): 'In conclusion, both drought and high temperature significantly reduce the yield of maize crop during monsoon season in IGP.'
+Record for Crop Yield '-25' from 'However, in 2080 scenario, yields are projected to be reduced by 25% from current yields.' has 3 out of 7 non-focus fields as N/A (>30% sparsity).
+Record for Crop Yield '-50' from 'However, by 2080, yields are projected to decline by 50% from current levels.' has 3 out of 7 non-focus fields as N/A (>30% sparsity).
+Record for Crop Yield '-40' from 'The average yield is projected to decrease by 40% due to drought in rainfed conditions.' has 3 out of 7 non-focus fields as N/A (>30% sparsity).
+Record for Crop Yield '1.5' from 'Maize crop during winter is provided with assured irrigation and thus yields about 1.5 times more' has 5 out of 7 non-focus fields as N/A (>30% sparsity).
+Record for Crop Yield '2' from 'The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP' has 3 out of 7 non-focus fields as N/A (>30% sparsity).

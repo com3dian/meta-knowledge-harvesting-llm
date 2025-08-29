@@ -1,0 +1,18 @@
+Crop Type,Crop Yield,Crop Yield Unit,Climate Drivers,Climate Drivers Value,Climate Drivers Unit,Experimental Design,Location,Time,Source in paper
+maize,-7,%,atmospheric temperatures,1,°C,InfoCrop-MAIZE model,HadCM3 model,UIGP,monsoon season
+maize,-11,%,atmospheric temperatures,2,°C,InfoCrop-MAIZE model,HadCM3 model,UIGP,monsoon season
+maize,-15,%,atmospheric temperatures,3,°C,InfoCrop-MAIZE model,HadCM3 model,UIGP,monsoon season
+maize,-22,%,atmospheric temperatures,4,°C,InfoCrop-MAIZE model,HadCM3 model,UIGP,monsoon season
+maize,-33,%,atmospheric temperatures,5,°C,InfoCrop-MAIZE model,HadCM3 model,UIGP,monsoon season
+maize,-8,%,atmospheric temperature,1,°C,InfoCrop-MAIZE model,HadCM3 model,MIGP,monsoon season
+maize,-35,%,atmospheric temperature,5,°C,InfoCrop-MAIZE model,HadCM3 model,MIGP,monsoon season
+maize,-10,%,temperature,1,°C,InfoCrop-MAIZE model,HadCM3 model,SP,monsoon season
+maize,-15,%,temperature,2,°C,InfoCrop-MAIZE model,HadCM3 model,SP,monsoon season
+maize,-23,%,temperature,3,°C,InfoCrop-MAIZE model,HadCM3 model,SP,monsoon season
+maize,-27,%,temperature,4,°C,InfoCrop-MAIZE model,HadCM3 model,SP,monsoon season
+maize,-35,%,temperature,5,°C,InfoCrop-MAIZE model,HadCM3 model,SP,monsoon season
+maize,0.1,%,carbon dioxide,450,ppmV,InfoCrop-MAIZE model,Bern CC model,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,3.4,%,carbon dioxide,450,ppmV,InfoCrop-MAIZE model,Bern CC model,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,0.6,%,carbon dioxide,550,ppmV,InfoCrop-MAIZE model,Bern CC model,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,7.2,%,carbon dioxide,550,ppmV,InfoCrop-MAIZE model,Bern CC model,N/A,"Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+maize,13,%,temperature,2,°C,InfoCrop-MAIZE model,HadCM3 model,UIGP,N/A

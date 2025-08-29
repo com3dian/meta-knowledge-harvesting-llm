@@ -1,0 +1,8 @@
+All extracted records comply with the specified format and headers.
+'Crop Type' and 'Crop Yield' fields are populated in all records.
+Numerical values for 'Crop Yield' and 'Climate Drivers Value' are extracted, with proxy values (+1, -1) used when a quantitative change was implied but not explicitly stated, and noted as 'qualitative' in 'Crop Yield Unit'.
+Units for 'Crop Yield' and 'Climate Drivers' are extracted when explicitly provided.
+'Climate Drivers' and 'Experimental Design' fields are populated by cross-referencing entities and relationships, often inferring from the contextual `description` in the relationships and prior sentences where explicit links were not one-to-one (e.g., for general "climate change scenarios", multiple climate drivers and models were grouped).
+'Location' and 'Time' are extracted where available. Time ranges like "2020-2080" are used for overall scenarios. "Monsoon season" and "winter" are used as time contexts.
+'Source in paper' contains the exact text snippet from the input file supporting each record.
+The truncation notice for `ENTITIES DATA` and `LINKS/RELATIONSHIPS DATA` was handled by systematically scanning the provided snippets.

@@ -1,0 +1,21 @@
+1.  **Re-extraction and Maximization:**
+    *   **Numerical Conversion and Sign Inference:**
+        *   'Crop Yield' values like "7, 11, 15, 22, and 33%" from "projected yield loss" were correctly converted to -7.0, -11.0, -15.0, -22.0, -33.0.
+        *   'Crop Yield' values like "8–35% reduction" were converted to -8.0 and -35.0.
+        *   'Crop Yield' values like "13% increase" was converted to 13.0.
+        *   'Crop Yield Unit' was correctly inferred as '%' from numerical values.
+        *   'Climate Drivers Value' values like "1, 2, 3, 4, 5°C degrees rise" were converted to 1.0, 2.0, 3.0, 4.0, 5.0.
+    *   **Splitting Complex Ranges:**
+        *   "up to 7, 11, 15, 22, and 33% ... with 1, 2, 3, 4, 5°C degrees rise" was split into 5 distinct, paired records.
+        *   "8–35% with 1–5°C rise" was split into two explicitly paired records: (-8% with 1°C) and (-35% with 5°C), representing the endpoints of the ranges, as per "explicitly paired records" interpretation when intermediate points are not stated.
+        *   "-10, -15, -23, -27 and -35% reductions ... at each 1°C rise in temperature" was interpreted as sequential pairings, resulting in 5 distinct records (e.g., -10% with 1°C, -15% with 2°C, etc.).
+    *   **Maximizing Population & Inference:**
+        *   `Crop Type` ('maize') was inferred for all records where not explicitly stated in the snippet, based on the overall context of the provided entities and the document's focus.
+        *   `Climate Drivers` ('temperature', 'CO2') and `Climate Drivers Unit` ('°C', '%', 'ppmV') were actively extracted or inferred from their respective snippets.
+        *   `Location` ('UIGP', 'MIGP', 'SP') was extracted from entities or inferred from context ("In this region" referring to previously mentioned region).
+        *   `Experimental Design` and `Time` were populated where explicitly mentioned in the snippet (e.g., specific model names, years). Where not present in the specific snippet, they were marked as `N/A`, adhering to the "within the *same snippet*" rule.
+
+2.  **Strict Data Completeness Filtering:**
+    *   The filtering rule "Any record that has **3 or more** `N/A` values among the following 7 non-focus columns must be **discarded**: 'Crop Yield Unit', 'Climate Drivers', 'Climate Drivers Value', 'Climate Drivers Unit', 'Experimental Design', 'Location', 'Time'" was applied rigorously.
+    *   Records that were descriptions of experimental setup without specific yield values, or described general climate change impacts without specific drivers/values, or contained too many `N/A`s in the non-focus columns (e.g., 'Crop Yield Unit', 'Climate Drivers', 'Climate Drivers Value', 'Climate Drivers Unit', 'Experimental Design', 'Location', 'Time') were discarded. For example, records related to CO2 impact from snippet 10 had 3 N/As (ED, Loc, Time) and were therefore discarded. Similarly, records with missing climate driver details or locations, and no experimental design/time, were filtered out.
+    *   Only records with 2 or fewer `N/A`s in the specified 7 non-focus columns remained. These typically had `Experimental Design` and `Time` as `N/A`, but were complete for 'Crop Yield Unit', 'Climate Drivers', 'Climate Drivers Value', 'Climate Drivers Unit', and 'Location'.

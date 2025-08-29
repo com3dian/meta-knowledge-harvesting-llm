@@ -1,0 +1,24 @@
+prefix ex: <http://example.org/>
+prefix skos: <http://www.w3.org/2004/02/skos/core#>
+prefix biolink: <http://w3id.org/biolink/vocab/>
+prefix qudt: <http://qudt.org/schema/qudt/>
+prefix unit: <http://qudt.org/vocab/unit/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+ex:Yield a skos:Concept;
+    skos:prefLabel "Yield";
+    ex:decrease [ ex:upperBound [biolink:has_percentage "7%"] ; 
+                  ex:hasCondition [ ex:increase [ qudt:numericValue "1"^^xsd:int ;
+                                                  qudt:unit unit:C ;
+                                                  ex:hasTarget ex:atmosphericTemperatures ]] ;
+                  ex:hasCropType ex:Maize ] ;
+    dcterms:source ex:Paper1.
+
+ex:Paper1 a dcterms:BibliographicResource;
+    dcterms:title "The Effect of Atmospheric Temperature on Maize Yield"@en;
+    dcterms:creator ex:Author1;
+    dcterms:date "2020-01-01"^^xsd:date;
+    dcterms:identifier "1234567890"^^xsd:string;
+    dcterms:source ex:Source1.
+
+

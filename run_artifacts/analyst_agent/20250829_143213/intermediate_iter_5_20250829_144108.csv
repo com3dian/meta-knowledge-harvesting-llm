@@ -1,0 +1,12 @@
+Crop Type,Crop Yield,Crop Yield Unit,Climate Drivers,Climate Drivers Value,Climate Drivers Unit,Experimental Design,Location,Time,Source in paper
+maize,-7,%,atmospheric temperatures,1,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,-11,%,atmospheric temperatures,2,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,-15,%,atmospheric temperatures,3,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,-22,%,atmospheric temperatures,4,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,-33,%,atmospheric temperatures,5,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,-10,%,temperature,1,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,-15,%,temperature,2,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,-23,%,temperature,3,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,-27,%,temperature,4,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,-35,%,temperature,5,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model
+maize,13,%,temperature,2,°C,simulation analysis,HadCM3 model,Bern CC model,InfoCrop-MAIZE model

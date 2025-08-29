@@ -1,0 +1,18 @@
+Crop Type,Crop Yield,Crop Yield Unit,Climate Drivers,Climate Drivers Value,Climate Drivers Unit,Experimental Design,Location,Time,Source in paper
+maize,-7,%,temperature,1,°C,simulation analysis,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,-11,%,temperature,2,°C,simulation analysis,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,-15,%,temperature,3,°C,simulation analysis,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,-22,%,temperature,4,°C,simulation analysis,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,-33,%,temperature,5,°C,simulation analysis,UIGP,N/A,The mean baseline yield of rainfed maize crop is about 2 Mg ha⁻¹ in UIGP
+maize,0.1,%,CO₂,450,ppmV,InfoCrop-MAIZE model simulations,N/A,N/A,Even though maize is a C4 plant
+maize,3.4,%,CO₂,450,ppmV,InfoCrop-MAIZE model simulations,N/A,N/A,Even though maize is a C4 plant
+maize,0.6,%,CO₂,550,ppmV,InfoCrop-MAIZE model simulations,N/A,N/A,Even though maize is a C4 plant
+maize,7.2,%,CO₂,550,ppmV,InfoCrop-MAIZE model simulations,N/A,N/A,Even though maize is a C4 plant
+maize,-8,%,temperature,1,°C,simulation analysis,MIGP,N/A,In MIGP region
+maize,-35,%,temperature,5,°C,simulation analysis,MIGP,N/A,In MIGP region
+maize,-10,%,temperature,1,°C,simulation analysis,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,-15,%,temperature,1,°C,simulation analysis,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,-23,%,temperature,1,°C,simulation analysis,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,-27,%,temperature,1,°C,simulation analysis,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,-35,%,temperature,1,°C,simulation analysis,SP,N/A,The SP region is also projected to experience adverse impact with -10
+maize,13,%,temperature,2,°C,simulation analysis,UIGP,N/A,In UIGP

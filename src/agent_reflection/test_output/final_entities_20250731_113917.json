@@ -1,0 +1,871 @@
+{
+  "entities": [
+    {
+      "name": "maize",
+      "type": "Crop Type",
+      "description": "Results of simulation analysis indicate that maize yields in monsoon season are adversely affected due to rise in atmospheric temperatures in all three regions (Fig. 2a)."
+    },
+    {
+      "name": "temperature",
+      "type": "Climate Drivers",
+      "description": "Results of simulation analysis indicate that maize yields in monsoon season are adversely affected due to rise in atmospheric temperatures in all three regions (Fig. 2a)."
+    },
+    {
+      "name": "1",
+      "type": "Climate Drivers Value",
+      "description": "Grain yield decreased with each degree rise in atmospheric temperature."
+    },
+    {
+      "name": "UIGP",
+      "type": "Location",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "-7",
+      "type": "Crop Yield",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "-11",
+      "type": "Crop Yield",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "-15",
+      "type": "Crop Yield",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "-22",
+      "type": "Crop Yield",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "-33",
+      "type": "Crop Yield",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "1",
+      "type": "Climate Drivers Value",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "2",
+      "type": "Climate Drivers Value",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "3",
+      "type": "Climate Drivers Value",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "4",
+      "type": "Climate Drivers Value",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "5",
+      "type": "Climate Drivers Value",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "\u00b0C",
+      "type": "Climate Drivers Unit",
+      "description": "Grain yield decreased with each degree rise in atmospheric temperature."
+    },
+    {
+      "name": "rainfall",
+      "type": "Climate Drivers",
+      "description": "However, a 20% increase in rainfall is projected to offset the yield loss due to 1\u00b0C rise in temperature."
+    },
+    {
+      "name": "20",
+      "type": "Climate Drivers Value",
+      "description": "However, a 20% increase in rainfall is projected to offset the yield loss due to 1\u00b0C rise in temperature."
+    },
+    {
+      "name": "30",
+      "type": "Climate Drivers Value",
+      "description": "Similarly, a 30% increase in rainfall is predicted to offset the adverse impact of 2\u00b0C rise in temperature."
+    },
+    {
+      "name": "%",
+      "type": "Climate Drivers Unit",
+      "description": "However, a 20% increase in rainfall is projected to offset the yield loss due to 1\u00b0C rise in temperature."
+    },
+    {
+      "name": "MIGP",
+      "type": "Location",
+      "description": "In MIGP region, yield reduction of about 8\u201335% with 1\u20135\u00b0C rise in atmospheric temperature is projected."
+    },
+    {
+      "name": "-8",
+      "type": "Crop Yield",
+      "description": "In MIGP region, yield reduction of about 8\u201335% with 1\u20135\u00b0C rise in atmospheric temperature is projected."
+    },
+    {
+      "name": "-35",
+      "type": "Crop Yield",
+      "description": "In MIGP region, yield reduction of about 8\u201335% with 1\u20135\u00b0C rise in atmospheric temperature is projected."
+    },
+    {
+      "name": "0.75",
+      "type": "Climate Drivers Value",
+      "description": "In this region, increase in rainfall is likely to offset the temperature rise up to 0.75\u00b0C and any increase beyond this temperature will adversely impact the yields, in spite of increase in rainfall."
+    },
+    {
+      "name": "SP",
+      "type": "Location",
+      "description": "The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1\u00b0C rise in temperature."
+    },
+    {
+      "name": "-10",
+      "type": "Crop Yield",
+      "description": "The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1\u00b0C rise in temperature."
+    },
+    {
+      "name": "-15",
+      "type": "Crop Yield",
+      "description": "The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1\u00b0C rise in temperature."
+    },
+    {
+      "name": "-23",
+      "type": "Crop Yield",
+      "description": "The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1\u00b0C rise in temperature."
+    },
+    {
+      "name": "-27",
+      "type": "Crop Yield",
+      "description": "The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1\u00b0C rise in temperature."
+    },
+    {
+      "name": "10",
+      "type": "Climate Drivers Value",
+      "description": "A 10% increase in rainfall will offset the reduction in yield due to 1\u00b0C rise in temperature in this region."
+    },
+    {
+      "name": "CO\u2082",
+      "type": "Climate Drivers",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "name": "0.1",
+      "type": "Crop Yield",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "name": "3.4",
+      "type": "Crop Yield",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "name": "0.6",
+      "type": "Crop Yield",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "name": "7.2",
+      "type": "Crop Yield",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "name": "450",
+      "type": "Climate Drivers Value",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "name": "550",
+      "type": "Climate Drivers Value",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "name": "ppmV",
+      "type": "Climate Drivers Unit",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "name": "water stress",
+      "type": "Climate Drivers",
+      "description": "The benefits are projected to be high in mild water stress conditions, but they are likely to reduce in severe water stress situations (Table 3)."
+    },
+    {
+      "name": "precipitation",
+      "type": "Climate Drivers",
+      "description": "Table 3 Influence of atmospheric carbon dioxide concentration on maize yields in rainfall deficit conditions during monsoon season"
+    },
+    {
+      "name": "1.5",
+      "type": "Crop Yield",
+      "description": "Maize crop during winter is provided with assured irrigation and thus yields about 1.5 times more than that of monsoon crop."
+    },
+    {
+      "name": "times",
+      "type": "Crop Yield Unit",
+      "description": "Maize crop during winter is provided with assured irrigation and thus yields about 1.5 times more than that of monsoon crop."
+    },
+    {
+      "name": "2.7",
+      "type": "Climate Drivers Value",
+      "description": "In UIGP, rise in temperatures up to 2.7\u00b0C is likely to improve the maize yields."
+    },
+    {
+      "name": "13",
+      "type": "Crop Yield",
+      "description": "In UIGP, this beneficial effect with rise in temperature is projected to be more up to 2\u00b0C rise (13% increase over current yields)."
+    },
+    {
+      "name": "2",
+      "type": "Climate Drivers Value",
+      "description": "In UIGP, this beneficial effect with rise in temperature is projected to be more up to 2\u00b0C rise (13% increase over current yields)."
+    },
+    {
+      "name": "simulation analysis",
+      "type": "Experimental Design",
+      "description": "Results of simulation analysis indicate that maize yields in monsoon season are adversely affected due to rise in atmospheric temperatures in all three regions (Fig. 2a)."
+    },
+    {
+      "name": "HadCM3 model",
+      "type": "Experimental Design",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "name": "Bern CC model",
+      "type": "Experimental Design",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "name": "InfoCrop-MAIZE model",
+      "type": "Experimental Design",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "name": "minimum and maximum temperatures",
+      "type": "Climate Drivers",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "name": "CO\u2082 concentrations",
+      "type": "Climate Drivers",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "name": "2020",
+      "type": "Time",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "name": "2050",
+      "type": "Time",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "name": "2080",
+      "type": "Time",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "name": "-5",
+      "type": "Crop Yield",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "name": "-13",
+      "type": "Crop Yield",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "name": "-17",
+      "type": "Crop Yield",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "name": "-21",
+      "type": "Crop Yield",
+      "description": "In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+    },
+    {
+      "name": "-35",
+      "type": "Crop Yield",
+      "description": "In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+    },
+    {
+      "name": "5",
+      "type": "Crop Yield",
+      "description": "As far as maize crop grown in winter is concerned, yield gains are projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit is likely to remain till 2050 (Fig. 4b)."
+    },
+    {
+      "name": "-25",
+      "type": "Crop Yield",
+      "description": "However, in 2080 scenario, yields are projected to be reduced by 25% from current yields."
+    },
+    {
+      "name": "-50",
+      "type": "Crop Yield",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "name": "-60",
+      "type": "Crop Yield",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "name": "India",
+      "type": "Location",
+      "description": "Thus, the spatio-temporal variation in existing climatic conditions and projected changes in temperature and rainfall would bring about differential impacts on monsoon maize crop in India."
+    },
+    {
+      "name": "monsoon season",
+      "type": "Time",
+      "description": "Results of simulation analysis indicate that maize yields in monsoon season are adversely affected due to rise in atmospheric temperatures in all three regions (Fig. 2a)."
+    },
+    {
+      "name": "baseline",
+      "type": "Time",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "name": "winter",
+      "type": "Time",
+      "description": "Maize crop during winter is provided with assured irrigation and thus yields about 1.5 times more than that of monsoon crop."
+    },
+    {
+      "name": "post-2020",
+      "type": "Time",
+      "description": "Winter maize in MIGP, currently a high yielding zone, is projected to suffer in post-2020 scenario."
+    },
+    {
+      "name": "2",
+      "type": "Crop Yield",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9."
+    },
+    {
+      "name": "Mg ha\u207b\u00b9",
+      "type": "Crop Yield Unit",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9."
+    }
+  ],
+  "relationships": [
+    {
+      "source": "maize",
+      "target": "temperature",
+      "description": "Results of simulation analysis indicate that maize yields in monsoon season are adversely affected due to rise in atmospheric temperatures in all three regions (Fig. 2a)."
+    },
+    {
+      "source": "1",
+      "target": "temperature",
+      "description": "Grain yield decreased with each degree rise in atmospheric temperature."
+    },
+    {
+      "source": "-7",
+      "target": "maize",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-7",
+      "target": "UIGP",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-7",
+      "target": "1",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-11",
+      "target": "maize",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-11",
+      "target": "UIGP",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-11",
+      "target": "2",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-15",
+      "target": "maize",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-15",
+      "target": "UIGP",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-15",
+      "target": "3",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-22",
+      "target": "maize",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-22",
+      "target": "UIGP",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-22",
+      "target": "4",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-33",
+      "target": "maize",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-33",
+      "target": "UIGP",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-33",
+      "target": "5",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "-7",
+      "target": "%",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9 in UIGP, where the projected yield loss is up to 7, 11, 15, 22, and 33% relative to baseline yields with 1, 2, 3, 4, 5\u00b0C degrees rise in atmospheric temperatures."
+    },
+    {
+      "source": "1",
+      "target": "\u00b0C",
+      "description": "Grain yield decreased with each degree rise in atmospheric temperature."
+    },
+    {
+      "source": "20",
+      "target": "rainfall",
+      "description": "However, a 20% increase in rainfall is projected to offset the yield loss due to 1\u00b0C rise in temperature."
+    },
+    {
+      "source": "20",
+      "target": "%",
+      "description": "However, a 20% increase in rainfall is projected to offset the yield loss due to 1\u00b0C rise in temperature."
+    },
+    {
+      "source": "1",
+      "target": "temperature",
+      "description": "However, a 20% increase in rainfall is projected to offset the yield loss due to 1\u00b0C rise in temperature."
+    },
+    {
+      "source": "30",
+      "target": "rainfall",
+      "description": "Similarly, a 30% increase in rainfall is predicted to offset the adverse impact of 2\u00b0C rise in temperature."
+    },
+    {
+      "source": "30",
+      "target": "%",
+      "description": "Similarly, a 30% increase in rainfall is predicted to offset the adverse impact of 2\u00b0C rise in temperature."
+    },
+    {
+      "source": "2",
+      "target": "temperature",
+      "description": "Similarly, a 30% increase in rainfall is predicted to offset the adverse impact of 2\u00b0C rise in temperature."
+    },
+    {
+      "source": "-8",
+      "target": "maize",
+      "description": "In MIGP region, yield reduction of about 8\u201335% with 1\u20135\u00b0C rise in atmospheric temperature is projected."
+    },
+    {
+      "source": "-8",
+      "target": "MIGP",
+      "description": "In MIGP region, yield reduction of about 8\u201335% with 1\u20135\u00b0C rise in atmospheric temperature is projected."
+    },
+    {
+      "source": "-8",
+      "target": "1",
+      "description": "In MIGP region, yield reduction of about 8\u201335% with 1\u20135\u00b0C rise in atmospheric temperature is projected."
+    },
+    {
+      "source": "-8",
+      "target": "%",
+      "description": "In MIGP region, yield reduction of about 8\u201335% with 1\u20135\u00b0C rise in atmospheric temperature is projected."
+    },
+    {
+      "source": "rainfall",
+      "target": "0.75",
+      "description": "In this region, increase in rainfall is likely to offset the temperature rise up to 0.75\u00b0C and any increase beyond this temperature will adversely impact the yields, in spite of increase in rainfall."
+    },
+    {
+      "source": "0.75",
+      "target": "temperature",
+      "description": "In this region, increase in rainfall is likely to offset the temperature rise up to 0.75\u00b0C and any increase beyond this temperature will adversely impact the yields, in spite of increase in rainfall."
+    },
+    {
+      "source": "-10",
+      "target": "maize",
+      "description": "The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1\u00b0C rise in temperature."
+    },
+    {
+      "source": "-10",
+      "target": "SP",
+      "description": "The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1\u00b0C rise in temperature."
+    },
+    {
+      "source": "-10",
+      "target": "1",
+      "description": "The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1\u00b0C rise in temperature."
+    },
+    {
+      "source": "-10",
+      "target": "%",
+      "description": "The SP region is also projected to experience adverse impact with -10, -15, -23, -27 and -35% reductions from the baseline yield levels at each 1\u00b0C rise in temperature."
+    },
+    {
+      "source": "10",
+      "target": "rainfall",
+      "description": "A 10% increase in rainfall will offset the reduction in yield due to 1\u00b0C rise in temperature in this region."
+    },
+    {
+      "source": "10",
+      "target": "%",
+      "description": "A 10% increase in rainfall will offset the reduction in yield due to 1\u00b0C rise in temperature in this region."
+    },
+    {
+      "source": "1",
+      "target": "temperature",
+      "description": "A 10% increase in rainfall will offset the reduction in yield due to 1\u00b0C rise in temperature in this region."
+    },
+    {
+      "source": "CO\u2082",
+      "target": "maize",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "source": "0.1",
+      "target": "CO\u2082",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "source": "0.1",
+      "target": "maize",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "source": "0.1",
+      "target": "%",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "source": "450",
+      "target": "CO\u2082",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "source": "450",
+      "target": "ppmV",
+      "description": "Even though maize is a C4 plant, increase in carbon dioxide is projected to benefit the crop yield ranging from 0.1 to 3.4% at 450 ppmV and 0.6 to 7.2% at 550 ppmV."
+    },
+    {
+      "source": "water stress",
+      "target": "maize",
+      "description": "The benefits are projected to be high in mild water stress conditions, but they are likely to reduce in severe water stress situations (Table 3)."
+    },
+    {
+      "source": "maize",
+      "target": "precipitation",
+      "description": "Table 3 Influence of atmospheric carbon dioxide concentration on maize yields in rainfall deficit conditions during monsoon season"
+    },
+    {
+      "source": "CO\u2082 concentrations",
+      "target": "precipitation",
+      "description": "Table 3 Influence of atmospheric carbon dioxide concentration on maize yields in rainfall deficit conditions during monsoon season"
+    },
+    {
+      "source": "1.5",
+      "target": "maize",
+      "description": "Maize crop during winter is provided with assured irrigation and thus yields about 1.5 times more than that of monsoon crop."
+    },
+    {
+      "source": "1.5",
+      "target": "times",
+      "description": "Maize crop during winter is provided with assured irrigation and thus yields about 1.5 times more than that of monsoon crop."
+    },
+    {
+      "source": "2.7",
+      "target": "temperature",
+      "description": "In UIGP, rise in temperatures up to 2.7\u00b0C is likely to improve the maize yields."
+    },
+    {
+      "source": "13",
+      "target": "maize",
+      "description": "In UIGP, this beneficial effect with rise in temperature is projected to be more up to 2\u00b0C rise (13% increase over current yields)."
+    },
+    {
+      "source": "13",
+      "target": "UIGP",
+      "description": "In UIGP, this beneficial effect with rise in temperature is projected to be more up to 2\u00b0C rise (13% increase over current yields)."
+    },
+    {
+      "source": "13",
+      "target": "2",
+      "description": "In UIGP, this beneficial effect with rise in temperature is projected to be more up to 2\u00b0C rise (13% increase over current yields)."
+    },
+    {
+      "source": "13",
+      "target": "%",
+      "description": "In UIGP, this beneficial effect with rise in temperature is projected to be more up to 2\u00b0C rise (13% increase over current yields)."
+    },
+    {
+      "source": "rainfall",
+      "target": "maize",
+      "description": "In the event of further increase in temperature to about 2.7\u00b0C, the reduction in yields can be offset only if rainfall is increased or more irrigation is provided."
+    },
+    {
+      "source": "HadCM3 model",
+      "target": "InfoCrop-MAIZE model",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "source": "Bern CC model",
+      "target": "InfoCrop-MAIZE model",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "source": "minimum and maximum temperatures",
+      "target": "2020",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "source": "rainfall",
+      "target": "2020",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "source": "CO\u2082 concentrations",
+      "target": "2020",
+      "description": "The climate change scenario outputs of HadCM3 model on minimum and maximum temperatures and rainfall; CO\u2082 concentrations as per Bern CC model for 2020, 2050 and 2080 were coupled to InfoCrop-MAIZE model."
+    },
+    {
+      "source": "-5",
+      "target": "maize",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-5",
+      "target": "MIGP",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-5",
+      "target": "2020",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-5",
+      "target": "%",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-13",
+      "target": "maize",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-13",
+      "target": "MIGP",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-13",
+      "target": "2050",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-17",
+      "target": "maize",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-17",
+      "target": "MIGP",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-17",
+      "target": "2080",
+      "description": "The loss from current yields is projected to be ~5%, ~13%, ~17% in 2020, 2050 and 2080, respectively."
+    },
+    {
+      "source": "-21",
+      "target": "maize",
+      "description": "In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+    },
+    {
+      "source": "-21",
+      "target": "SP",
+      "description": "In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+    },
+    {
+      "source": "-21",
+      "target": "2020",
+      "description": "In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+    },
+    {
+      "source": "-21",
+      "target": "%",
+      "description": "In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+    },
+    {
+      "source": "-35",
+      "target": "maize",
+      "description": "In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+    },
+    {
+      "source": "-35",
+      "target": "SP",
+      "description": "In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+    },
+    {
+      "source": "-35",
+      "target": "2050",
+      "description": "In SP, monsoon season crop is projected to lose grain yield by 21% from current yields due to climate change by 2020 and 35% by 2050 and later."
+    },
+    {
+      "source": "5",
+      "target": "maize",
+      "description": "As far as maize crop grown in winter is concerned, yield gains are projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit is likely to remain till 2050 (Fig. 4b)."
+    },
+    {
+      "source": "5",
+      "target": "UIGP",
+      "description": "As far as maize crop grown in winter is concerned, yield gains are projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit is likely to remain till 2050 (Fig. 4b)."
+    },
+    {
+      "source": "5",
+      "target": "2020",
+      "description": "As far as maize crop grown in winter is concerned, yield gains are projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit is likely to remain till 2050 (Fig. 4b)."
+    },
+    {
+      "source": "5",
+      "target": "%",
+      "description": "As far as maize crop grown in winter is concerned, yield gains are projected to be ~5% over current yield in 2020 scenario at UIGP and this benefit is likely to remain till 2050 (Fig. 4b)."
+    },
+    {
+      "source": "-25",
+      "target": "maize",
+      "description": "However, in 2080 scenario, yields are projected to be reduced by 25% from current yields."
+    },
+    {
+      "source": "-25",
+      "target": "UIGP",
+      "description": "However, in 2080 scenario, yields are projected to be reduced by 25% from current yields."
+    },
+    {
+      "source": "-25",
+      "target": "2080",
+      "description": "However, in 2080 scenario, yields are projected to be reduced by 25% from current yields."
+    },
+    {
+      "source": "-25",
+      "target": "%",
+      "description": "However, in 2080 scenario, yields are projected to be reduced by 25% from current yields."
+    },
+    {
+      "source": "-50",
+      "target": "maize",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "source": "-50",
+      "target": "MIGP",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "source": "-50",
+      "target": "2050",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "source": "-50",
+      "target": "%",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "source": "-60",
+      "target": "maize",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "source": "-60",
+      "target": "MIGP",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "source": "-60",
+      "target": "2080",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "source": "-60",
+      "target": "%",
+      "description": "The reduction in yield is likely to be to the tune of ~50% by 2050 and about 60% by 2080."
+    },
+    {
+      "source": "-13",
+      "target": "SP",
+      "description": "In SP region, yields are projected to decline by about 13% in 2020, 17% in 2050 and 21% in 2080."
+    },
+    {
+      "source": "-13",
+      "target": "maize",
+      "description": "In SP region, yields are projected to decline by about 13% in 2020, 17% in 2050 and 21% in 2080."
+    },
+    {
+      "source": "-13",
+      "target": "2020",
+      "description": "In SP region, yields are projected to decline by about 13% in 2020, 17% in 2050 and 21% in 2080."
+    },
+    {
+      "source": "-17",
+      "target": "SP",
+      "description": "In SP region, yields are projected to decline by about 13% in 2020, 17% in 2050 and 21% in 2080."
+    },
+    {
+      "source": "-17",
+      "target": "maize",
+      "description": "In SP region, yields are projected to decline by about 13% in 2020, 17% in 2050 and 21% in 2080."
+    },
+    {
+      "source": "-17",
+      "target": "2050",
+      "description": "In SP region, yields are projected to decline by about 13% in 2020, 17% in 2050 and 21% in 2080."
+    },
+    {
+      "source": "-21",
+      "target": "SP",
+      "description": "In SP region, yields are projected to decline by about 13% in 2020, 17% in 2050 and 21% in 2080."
+    },
+    {
+      "source": "-21",
+      "target": "maize",
+      "description": "In SP region, yields are projected to decline by about 13% in 2020, 17% in 2050 and 21% in 2080."
+    },
+    {
+      "source": "-21",
+      "target": "2080",
+      "description": "In SP region, yields are projected to decline by about 13% in 2020, 17% in 2050 and 21% in 2080."
+    },
+    {
+      "source": "2",
+      "target": "maize",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9."
+    },
+    {
+      "source": "2",
+      "target": "Mg ha\u207b\u00b9",
+      "description": "The mean baseline yield of rainfed maize crop is about 2 Mg ha\u207b\u00b9."
+    }
+  ]
+}

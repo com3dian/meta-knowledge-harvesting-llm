@@ -1,0 +1,12 @@
+1.  **Strict Source Snippet Extraction & Deconstruction:** Records for UIGP (-7 to -33% yield loss with 1-5°C temp rise) and SP (-10 to -35% yield reduction at each 1°C rise in temperature) were deconstructed from a single comprehensive sentence. The full original sentence supports all core values for each deconstructed record and is used as 'Source in paper'. The record for UIGP (13% increase with 2°C rise) was extracted from its supporting sentence.
+2.  **Discarding Insufficient Records:**
+    *   Records indicating "offset" or "improve" as Crop Yield were discarded due to being qualitative (e.g., "However, a 20% increase in rainfall is projected to offset the yield loss due to 1°C rise in temperature.").
+    *   Records where 'Climate Drivers' were non-climate variables (e.g., "assured irrigation") were discarded.
+    *   Records with qualitative or ranged 'Crop Yield' (e.g., "benefit the crop yield ranging from 0.1 to 3.4%") were discarded as per rule 3's enforcement of strictly numerical yield values.
+    *   The MIGP record ("yield reduction of about 8–35% with 1–5°C rise") was discarded because specific yield reductions could not be unequivocally linked to specific temperature rises in the given text, violating the explicit and unequivocal support requirement for all core values.
+    *   Records where 'Climate Drivers' were too general (e.g., "climate change" or "2020 scenario") were discarded as they lacked specific, quantifiable climate variables and values.
+3.  **Populating Non-Focus Fields:**
+    *   'Experimental Design': Identified from the general methodology description: "Results of simulation analysis indicate..." and "The climate change scenario outputs of HadCM3 model... coupled to InfoCrop-MAIZE model."
+    *   'Location': Explicitly stated in the source snippets (UIGP, SP).
+    *   'Time': For temperature sensitivity analyses, 'Time' was marked as "N/A" as the yield impacts were linked to specific temperature rises rather than particular future years (e.g., 2020, 2050, 2080).
+4.  **Numerical Value Enforcement:** All 'Crop Yield' and 'Climate Drivers Value' are strictly numerical, and units are in separate columns. No conversions were needed for the retained records as they were already percentages or degrees Celsius.
